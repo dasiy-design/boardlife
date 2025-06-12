@@ -1,0 +1,60 @@
+/* color */
+:root{
+  --color-main: #76CC1E;
+  --color-black: #222222;
+  --color-gray-6: #666666;
+  --color-gray-c: #CCCCCC;
+  --color-gray-light: #F0F0F0;
+}
+
+/* font */
+
+
+
+
+html{
+  width: 430px;
+}
+
+body{
+  font-family: 'Pretendard-Regular';
+  margin: 0 25px;
+}
+
+li {
+	list-style: none;
+}
+
+/* logo text */
+
+
+
+
+/* title text */
+h1{
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  /* font-style: normal; */
+  font-size: 32px;
+}
+h2{
+  font-family: 'Pretendard-Regular';
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/* body text */
+h3{
+  font-weight: bold;
+  font-size: 22px;
+}
+p{
+  font-weight: 400;
+  font-size: 18px;
+}
+p.small{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+

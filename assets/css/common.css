@@ -22,6 +22,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -78,6 +79,7 @@ a{
 .card{
   margin-bottom: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
 .tab-button{
@@ -172,4 +174,23 @@ p.small{
 }
 .title-wrap .title h1{
   margin-bottom: 20px;
+}
+
+input.user-form{
+  width: 380px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid var(--color-gray-light);
+  font-size: 18px;
+}
+input.user-form::placeholder{
+  color: var(--color-gray-6); 
+}
+input.user-form:focus{
+  border-color: var(--color-primary);
+}
+input.user-form:not(:placeholder-shown){
+  border-color: var(--color-gray-c);
 }

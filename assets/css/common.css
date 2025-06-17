@@ -25,14 +25,20 @@
 }
 
 html{
-  width: 430px;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   color: var(--color-black);
+  background-color: var(--color-gray-light);
 }
 
 body{
   font-family: 'Pretendard-Regular';
+  width: 430px;
+  background-color: white;
+  border-radius: 20px;
+  height: 100vh;
 }
 
 li {
@@ -56,14 +62,14 @@ a{
 }
 
 /* logo text */
-.logo{
+.logo a{
   font-family: "Baloo 2", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 32px;
   color: var(--color-primary);
 }
-.logo span{
+.logo a span{
   color: var(--color-secondary);
 }
 

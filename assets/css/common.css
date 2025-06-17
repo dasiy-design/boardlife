@@ -150,9 +150,13 @@ p{
   font-weight: 400;
   font-size: 18px;
 }
-p.small{
+p.middle{
   font-weight: 400;
   font-size: 16px;
+}
+p.small{
+  font-weight: 400;
+  font-size: 14px;
 }
 
 
@@ -191,4 +195,6 @@ p.small{
   line-height: 25px;
   background-color: white;
   color: var(--color-primary);
+  font-size: 14px;
 }
+

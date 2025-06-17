@@ -1,0 +1,23 @@
+header{
+  padding: 65px 25px 10px;
+  width: 430px;
+  /* height: 126px; */
+  display: flex;
+}
+header nav .header-icons{
+  margin-left: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+header nav .header-icons i.xi-search{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+header nav .menu{
+  /* border: 1px solid #000; */
+  display: flex;
+  cursor: pointer;
+}

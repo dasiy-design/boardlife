@@ -1,12 +1,13 @@
+#board{padding: 0 20px;}
 #board .title-wrap{
   position: relative;
-  border: 1px solid #ff3939;
+  /* border: 1px solid #ff3939; */
   margin: 40px 0;
 }
 #board .title-wrap i{
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 0;
   font-size: 25px;
   font-weight: 700;
 }

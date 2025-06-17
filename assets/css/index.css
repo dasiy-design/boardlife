@@ -1,5 +1,5 @@
 main{
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 #banner img{
   width: 430px;
@@ -106,7 +106,76 @@ main{
 }
 
 #best-post{
-  border: 1px solid #000;
   height: 586px;
   background-color: #F6F6F6;
+  color: var(--color-black);
+}
+#best-post .card-container{
+  padding: 20px 0;
+}
+#best-post .card-container .post-text{
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+/* right arrow */
+#best-post .card-container .post-text i{
+  color: var(--color-gray-9);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#best-post ul.card{
+  /* border: 1px solid #000; */
+  width: 380px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* 게시글 이미지 */
+#best-post ul.card .card-item img{
+  width: 340px;
+  height: 170px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#best-post ul.card .card-top{
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+#best-post ul.card .card-top i{
+  margin: 10px 20px 5px;
+  font-size: 24px;
+}
+#best-post ul.card .card-item p.middle{
+  /* border: 1px solid #000; */
+  margin: 10px 20px;
+  height: 66px;
+  overflow: hidden;
+}
+
+/* 조회수, 반응 */
+#best-post ul.card .caption{
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  margin: 0 20px ;        /* 내려야됨 */
+}
+#best-post ul.card .caption .watch{
+  margin-right: 180px;
+}
+#best-post ul.card .caption .reaction{
+  display: inline-block;
+  /* border: 1px solid #000; */
+}
+#best-post ul.card .caption .reaction i{
+  margin: 8px 4px;
 }

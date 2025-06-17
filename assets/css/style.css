@@ -4,4 +4,6 @@
 @import url(footer.css);
 @import url(index.css);
 
-@import url(board.css);
+
+
+@import url(board&search-result.css);

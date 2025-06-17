@@ -3,30 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>보라common</title>
+  <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
-<body>
+<body class="common-body">
 
+  <!-- 로고 -->
   <div class="logo">
     BOARD<span>LIFE</span>
   </div>
+
+  <!-- 타이틀 정렬 -->
+  <div class="title-wrap">
+    <a href="#">
+      <i class="xi-angle-left"></i>
+    </a>
+    <div class="title">
+      <h1>게시판</h1>
+    </div>
+  </div>
+
+  <!-- 탭버튼 -->
   <div class="tab-button">
     전체
   </div>
-
-  <div class="write-btn">
-    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
+  <div class="tab-wrap">
+    <div class="tab-items">
+      <a href="#none" class="tab-button active">전체</a>
+      <a href="#none" class="tab-button">베스트</a>
+      <a href="#none" class="tab-button">신규</a>
+      <a href="#none" class="tab-button">팔로우</a>
+    </div>
   </div>
 
+  <!-- 하단 버튼 -->
   <div class="bottom-btn">
     <h3>로그인</h3>
   </div>
 
+  <!-- 아이콘 모음 -->
   <div class="icons">  
     <i class="xi-heart"></i>
-    <i class="xi-heart-o"></i>
     <i class="xi-home"></i>
     <i class="xi-trophy"></i>
     <i class="xi-comment"></i>
@@ -54,15 +72,11 @@
     <i class="fa-regular fa-comment"></i>
   </div>
 
-  <div class="title-wrap">
-    <i class="xi-angle-left"></i>
-    <div class="title">
-      <h1>게시판</h1>
-      <h2>함께 나누는 보드게임 이야기</h2>
-    </div>
+  <div class="write-btn">
+    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
   </div>
 
-
+  <!-- 미니탭 -->
   <div class="mini-tab">
     후기
   </div>
@@ -100,10 +114,6 @@
       </div>
     </div>
   </div>
-
-
-
-  
 
 
 </body>

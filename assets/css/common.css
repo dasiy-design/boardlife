@@ -244,6 +244,10 @@ p.small{
 }
 .board-card .card-content img{
   margin-bottom: 15px;
+  width: 340px;
+  height: 172px;
+  object-fit: cover;
+  border-radius: 3px;
 }
 .board-card .card-content p{
   width: 340px;

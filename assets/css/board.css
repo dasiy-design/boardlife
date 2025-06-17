@@ -1,4 +1,4 @@
-#board{padding: 0 20px;}
+#board{padding: 0 25px;}
 #board .title-wrap{
   position: relative;
   /* border: 1px solid #ff3939; */
@@ -19,4 +19,10 @@
 }
 #board .title-wrap .title h1{
   margin-bottom: 20px;
+}
+
+#board .tab-wrap{
+  display: flex;
+  margin-bottom: 40px;
+  gap: 20px;
 }

@@ -25,14 +25,20 @@
 }
 
 html{
-  width: 430px;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   color: var(--color-black);
+  background-color: var(--color-gray-light);
 }
 
 body{
   font-family: 'Pretendard-Regular';
+  width: 430px;
+  background-color: white;
+  border-radius: 20px;
+  height: 100vh;
 }
 
 li {
@@ -115,6 +121,7 @@ a{
 }
 
 
+
 /* title text */
 h1{
   font-family: 'Pretendard-Regular';
@@ -147,3 +154,26 @@ p.small{
 }
 
 
+
+/* 타이틀 정렬 */
+.title-wrap{
+  position: relative;
+  border: 1px solid #ff3939;
+  margin: 40px 0;
+}
+.title-wrap i{
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.title-wrap .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-wrap .title h1{
+  margin-bottom: 20px;
+}

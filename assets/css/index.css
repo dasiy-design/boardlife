@@ -59,7 +59,7 @@ main{
   color: var(--color-gray-9);
   border: 1px solid red;
 }
-#best-lank{
+#best-ranking{
   width: 430px;
   height: 730px;
   justify-content: center;
@@ -67,26 +67,26 @@ main{
   background-color: var(--color-black);
   color: white;
 }
-#best-lank .title-wrap{
+#best-ranking .title-wrap{
   padding: 90px 80px;
 }
-#best-lank .title-wrap p{
+#best-ranking .title-wrap p{
   margin-top: 6px;
 }
-#best-lank .best-wrap{
+#best-ranking .best-wrap{
   /* border: 1px solid #000; */
   position: relative;
   height: 420px;
 }
-#best-lank .best-wrap ul.best-lank{
+#best-ranking .best-wrap ul.best-rank{
   /* border: 1px solid #000; */
   display: flex;
   align-items: center;
 }
-#best-lank .best-wrap ul.best-lank li{
+#best-ranking .best-wrap ul.best-rank li{
   border: 1px solid red;
 }
-#best-lank .best-wrap ul.best-lank li h6{
+#best-ranking .best-wrap ul.best-rank li h6{
   position: absolute;
   font-size: 100px;
   font-family: 'Pretendard-Regular';
@@ -95,13 +95,13 @@ main{
   z-index: 10;
 }
 
-#best-lank .best-wrap ul.best-lank img{
+#best-ranking .best-wrap ul.best-rank img{
   width: 280px;
   height: 300px;
   border-radius: 5px;
   margin-top: 60px;
 }
-#best-lank .best-wrap h2{
+#best-ranking .best-wrap h2{
   margin-top: 20px;
 }
 

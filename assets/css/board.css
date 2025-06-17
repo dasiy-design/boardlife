@@ -29,19 +29,22 @@
 
 
 /* 게시글 카드 */
-.card{
-  padding:  20px;
+.board-card{
+  padding: 20px;
   width: 380px;
   position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
-.card>i{
+.board-card>i{
   position: absolute;
   top: -2px;
   left: 12px;
   color: var(--color-secondary);
   font-size: 24px;
 }
-.card .card-profile{
+.board-card .card-profile{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,53 +52,53 @@
   height: 25px;
   margin-bottom: 40px;
 }
-.card .card-profile .name{
+.board-card .card-profile .name{
   display: flex;
 }
-.card .card-profile i{
+.board-card .card-profile i{
   font-size: 20px;
   margin-right: 5px;
 }
-.card .card-profile img{
+.board-card .card-profile img{
   width: 20px;
   margin-right: 5px;
 }
 
-.card .card-content{
+.board-card .card-content{
   margin: 0 auto 40px;
 }
-.card .card-content h4{
+.board-card .card-content h4{
   margin-bottom: 15px;
 }
-.card .card-content img{
+.board-card .card-content img{
   margin-bottom: 15px;
 }
-.card .card-content p{
+.board-card .card-content p{
   width: 340px;
   height: 65px;
   overflow: hidden;
   line-height: 17px;
 }
 
-.card .card-bottom{
+.board-card .card-bottom{
   display: flex;
   justify-content: space-between;
 }
-.card .card-bottom .card-bt-right{
+.board-card .card-bottom .card-bt-right{
   display: flex;
   column-gap: 15px;
 }
-.card .card-bottom p,
-.card .card-bottom i{
+.board-card .card-bottom p,
+.board-card .card-bottom i{
   font-size: 14px;
   font-weight: 400;
   color: var(--color-gray-6);
 }
-.card .card-bottom .heart i{
+.board-card .card-bottom .heart i{
   font-size: 16px;
 }
-.card .card-bottom .heart,
-.card .card-bottom .comment{
+.board-card .card-bottom .heart,
+.board-card .card-bottom .comment{
   display: flex; 
   column-gap: 5px;
 }

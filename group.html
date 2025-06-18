@@ -9,22 +9,135 @@
 </head>
 <body>
   
-  <header>
-    <div class="logo">
-      BOARD<span>LIFE</span>
-    </div>
-    <nav>
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
       <div class="header-icons">
-        <i class="xi-search"></i>
-        <i class="xi-align-left"></i>
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights  reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은  <br />보드라이프 및 보드라이프 이용자에게 있습니다.  </p>
+          </div>
+        </div>
       </div>
     </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
   </header>
 
+  <main>
+
+    <div class="title-wrap">
+      <i class="xi-angle-left"></i>
+      <div class="title">
+        <h1>모임</h1>
+      </div>
+    </div>
+
+    <div class="group tab-wrap">
+      <div class="tab-items">
+          <div class="custom-dropdown tab-button active" id="Dropdown">
+          <span class="selected-text">서울</span>
+          <i class="xi-angle-down"></i>
+          <ul class="dropdown-menu">
+            <li data-value="서울">서울</li>
+            <li data-value="OUTERWEAR">OUTERWEAR</li>
+            <li data-value="TOPS">TOPS</li>
+            <li data-value="ACCESSORIES">ACCESSORIES</li>
+            <li data-value="KIDS">KIDS</li>
+          </ul>
+        </div>
+        <a href="#none" class="tab-button active">인기순</a>
+        <a href="#none" class="tab-button">추천순</a>
+      </div>
+    </div>
+
+    
+
+
+  </main>
 
 
 
 
+
+
+
+
+  <footer>
+    <nav id="navigation">
+      <ul class="nav-bar">
+        <li><i class="xi-home"></i></li>
+        <li><i class="xi-comment"></i></li>
+        <li><i class="xi-trophy"></i></li>
+        <li><i class="xi-user"></i></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/tab.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,45 @@
+.group{
+  padding: 0 25px;
+}
+.group.tab-wrap a i{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
+.group.tab-wrap{
+  overflow: visible;
+}
+
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #f2f2f2;
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.custom-dropdown .dropdown-menu li {
+  padding: 0 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu li:hover {
+  color: #f2f2f2;
+  background-color: var(--color-primary);
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+}

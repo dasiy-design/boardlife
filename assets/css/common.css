@@ -118,8 +118,6 @@ p.small{
 }
 .title-wrap i{
   position: absolute;
-<<<<<<< HEAD
-=======
   top: 5px;
   margin: 40px 25px;
   width: 100%;
@@ -127,7 +125,6 @@ p.small{
 }
 .title-wrap i{
   position: absolute;
->>>>>>> d326897cd7f0a0361dcaf3144fd0309250dab86b
   top: 50%;
   transform: translateY(-50%);
   left: 0;
@@ -143,14 +140,6 @@ p.small{
 /* 카드 */
 .card{
   margin-bottom: 20px;
-<<<<<<< HEAD
-=======
-}
-
-/* 카드 */
-.card{
-  margin-bottom: 20px;
->>>>>>> d326897cd7f0a0361dcaf3144fd0309250dab86b
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
@@ -238,10 +227,6 @@ p.small{
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  column-gap: 200px;
-=======
->>>>>>> d326897cd7f0a0361dcaf3144fd0309250dab86b
   height: 25px;
   margin-bottom: 40px;
 }

@@ -112,7 +112,7 @@ p.small{
 /* 타이틀 정렬 */
 .title-wrap{
   position: relative;
-  margin: 40px 25px;
+  margin: 166px 25px 40px;
   width: 100%;
   max-width: 380px;
 }

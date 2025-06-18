@@ -7,41 +7,302 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
-<body id="board">
+<body>
   
-  <header>
-    <div class="logo">
-      BOARD<span>LIFE</span>
-    </div>
-    <nav>
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
       <div class="header-icons">
-        <i class="xi-search"></i>
-        <i class="xi-align-left"></i>
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights  reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은  <br />보드라이프 및 보드라이프 이용자에게 있습니다.  </p>
+          </div>
+        </div>
       </div>
     </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
   </header>
 
-  <div class="title-wrap">
-    <i class="xi-angle-left"></i>
-    <div class="title">
-      <h1>게시판</h1>
-      <h2>함께 나누는 보드게임 이야기</h2>
+  <main>
+
+    <!-- 고정 글쓰기 버튼 -->
+    <!-- <div class="write-btn">
+      <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
+    </div> -->
+
+    <div class="board title-wrap">
+      <i class="xi-angle-left"></i>
+      <div class="title">
+        <h1>게시판</h1>
+      </div>
     </div>
-  </div>
+  
+    <div class="board tab-wrap">
+      <div class="tab-items">
+        <a href="#none" class="tab-button">
+          전체
+          <i class="xi-angle-down"></i>
+        </a>
+        <a href="#none" class="tab-button active">베스트 </a>
+        <a href="#none" class="tab-button">신규</a>
+        <a href="#none" class="tab-button">팔로우</a>
+      </div>
+    </div>
+  
+    <!-- 게시글 카드 -->
+    <section class="board">
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <img src="assets/images/board/profile-img2.png" alt="프로필이미지">
+            <p class="middle">별밤</p>
+          </div>
+          <div class="mini-tab">
+            후기
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>우주적 규모의 게임, SETI 첫인상 (Feat. 콘택트 1997)</h4>
+          <img src="assets/images/board/bd-img4.png" alt="게임이미지">
+          <p class="small">
+            [세티의 박스 아트웍은 VLA을 모델로 하고 있다. 옥에 티라면 전파에 방해가 될만한 주위에 거대 구조물이 있으면 안 되는데, 가시거리에 발사대가 있으며, 로켓을 발사한다는 것이...  (웃고자 한 이야기지지만) 사실 상징성을 생각하면 이보다 좋은 아트웍은 없다.]
+            조디 포스터가 아레시보 전파망원경 앞에서 하늘을 올려다보던 그 순간을 기억하는가? 칼 세이건의 소설을 바탕으로 한 영화 '콘택트'에서 엘리 애로웨이 박사가 느꼈던 그 무한한 호기심과 외로움, 그리고 희미한 희망.
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>조회 1,149</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>41</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>29</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="tab-wrap">
-    <a href="#none" class="tab-button active">전체</a>
-    <a href="#none" class="tab-button">베스트</a>
-    <a href="#none" class="tab-button">신규</a>
-    <a href="#none" class="tab-button">팔로우</a>
-  </div>
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <i class="xi-profile"></i>
+            <p class="middle">리클러스</p>
+          </div>
+          <div class="mini-tab">
+            후기
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>최근 즐긴 게임들 간단한 후기</h4>
+          <img src="assets/images/board/bd-img1.png" alt="게임이미지">
+          <p class="small">
+            아 요거는 한 판 간신히 해봤네요.<br>
+            담주부터 슬슬 해보려고요. 후기는 다음으로 미룰까 했는데, 챕터마다 클리어 조건을 주고 아이템도 하나 주는 그런건데, 살짝 맛만 봤지만 솔플러분들 간보지 마시고 그냥 츄라이츄라이 하시라는 말씀 드리고 가도 될 것 같아용.
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>조회 541</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>18</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <img src="assets/images/board/profile-img1.png" alt="프로필이미지">
+            <p class="middle">체념</p>
+          </div>
+          <div class="mini-tab">
+            자유
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>약속을 자꾸 파투내는 모임원에 대하여</h4>
+          <p class="small">
+            안녕하세요. 오늘도 겪은 일을 이야기해 보고자 이렇게 글을 씁니다.
+            여러분도 혹시 모임에 가입되어 있으신가요?<br>
+            저는 모임원의 모임장으로 활동 중인데요.
+            특정 멤버가 약속 1시간 전 못 간다고 하거나 당일에 연락을 합니다...
+            어떻게 조치를 취해야할까요? 하아.. 오늘도 게임 다 준비했는데 못하게 생겼습니다...
+            +많은 유저 분들의 조언 너무 감사드립니다... 앞으로 모임을 할 때 꼭 참고하겠습니다!
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>조회 1,673</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>9</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>28</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <i class="xi-profile"></i>
+            <p class="middle">sihwa</p>
+          </div>
+          <div class="mini-tab">
+            자유
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>코보게 B캠프 다녀왔습니다.</h4>
+          <img src="assets/images/board/bd-img2.jpeg" alt="게임이미지">
+          <p class="small">
+            게임 룰을 배우고 직접 참여자분들과 함께 플레이하고 플레이했던 게임을 50%할인가로
+            구매가능하다고 해서 다녀왔습니다. 제가 선택한 게임은 푸에르토리코1897이었습니다. 확실히 직접 룰 배우고 해보니 재미있네요. 플레이 후 같은 조에 계신분 모두 게임을 가지고 계시다하여, 제가 할인가로 구매을 했네요! 그리고 마지막으로 가이오트님과도 한컷 찍고 왔네요!
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>조회 1,089</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>6</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>33</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <i class="xi-profile"></i>
+            <p class="middle">보드박스</p>
+          </div>
+          <div class="mini-tab">
+            자료
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>세티 외계인 팬 확장 Heptapod 한글화</h4>
+          <img src="assets/images/board/bd-img3.png" alt="게임이미지">
+          <p class="small">
+            최근까지도 세티를 너무 재밌게 하고 있는 보드박스입니다.<br> 20판 넘게 하다보니 새로운 외계인을 하고 싶다는 욕구에 긱을 뒤지던 도중 팬확장을 발견해서 설레는 맘으로 부족하지만 한글화했습니다! 최대한 매끄럽게 해보려고는 했으나 혹시 오역이 있다면 말씀해주세요! 혹시 문제가 생기게 되면 바로 내리겠지만 그 전까지는 올려두도록 하겠습니다!
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>조회 1,146</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>30</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>14</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+
+    
+
+  </main>
+
+
+  <footer>
+    <nav id="navigation">
+      <ul class="nav-bar">
+        <li><i class="xi-home"></i></li>
+        <li><i class="xi-comment"></i></li>
+        <li><i class="xi-trophy"></i></li>
+        <li><i class="xi-user"></i></li>
+      </ul>
+    </nav>
+  </footer>
 
 
 
-
-
-
-
-
-</body>
+  <script src="/assets/js/header.js"></script>
+</body>  
 </html>

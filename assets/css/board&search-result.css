@@ -1,0 +1,64 @@
+.board{
+  padding: 0 25px;
+}
+.board.tab-wrap a i{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* 검색 결과 */
+.result{
+  padding: 0 25px;
+}
+.result.title-wrap{
+  position: relative;
+}
+.result.title-wrap i{
+  position: absolute;
+  top: 10px;
+}
+.result.title-wrap .title{
+  flex-direction: column;
+}
+.result.title-wrap .title p{
+  margin-bottom: 20px;
+}
+
+.result.tab-wrap a i{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* ----- 게임 */
+.result.card{
+  width: 380px;
+  margin: auto;
+  padding: 25px 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.result.card img{
+  width: 155px;
+  height: 155px;
+}
+.result.card .card-right{
+  margin-left: 15px;
+}
+.result.card .card-right p.small{
+  margin-bottom: 10px;
+}
+.result.card .card-right h4{
+  margin-bottom: 20px;
+}
+.result.card .card-right .percent{
+  color: var(--color-secondary);
+}
+.result.card .card-right h3{
+  margin-bottom: 15px;
+}
+.result.card .card-right .cost{
+  text-decoration-line: line-through;
+  color: var(--color-gray-9);
+}
+
+/* ----- 게시글 */

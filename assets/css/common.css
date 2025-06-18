@@ -96,7 +96,7 @@ p.small{
 }
 
 /* 로고 */
-.logo{
+.logo a{
   font-family: "Baloo 2", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -220,7 +220,6 @@ p.small{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 200px;
   height: 25px;
   margin-bottom: 40px;
 }

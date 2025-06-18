@@ -7,10 +7,6 @@
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
-.common-body{
-  padding-left: 25px;
-}
-
 /* color */
 :root{
   --color-primary: #4A90E2;
@@ -39,7 +35,8 @@ html{
 
 body{
   font-family: 'Pretendard-Regular';
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   background-color: white;
 }
 
@@ -99,7 +96,7 @@ p.small{
 }
 
 /* 로고 */
-.logo{
+.logo a{
   font-family: "Baloo 2", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -115,8 +112,9 @@ p.small{
 /* 타이틀 정렬 */
 .title-wrap{
   position: relative;
-  margin: 40px 0px;
-  width: 380px;
+  margin: 40px 25px;
+  width: 100%;
+  max-width: 380px;
 }
 .title-wrap i{
   position: absolute;
@@ -156,19 +154,23 @@ p.small{
 }
 .tab-wrap{
   display: flex;
-  width: 380px;
+  width: 100%;
+  max-width: 430px;
+  padding-left: 25px;
   height: 40px;
+  overflow: hidden;
   white-space: nowrap;
   margin: 0 0 40px;
 }
 .tab-items{
-  width: 1000px;
+  width: 100%;
 }
 
 /* 하단 버튼 */
 .bottom-btn{
   background-color: var(--color-primary);
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   height: 65px;
   color: white;
   display: flex;
@@ -208,7 +210,8 @@ p.small{
 /* 게시글 카드 */
 .board-card{
   padding: 20px;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   margin-bottom: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -217,7 +220,6 @@ p.small{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 200px;
   height: 25px;
   margin-bottom: 40px;
 }

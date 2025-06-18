@@ -81,6 +81,7 @@ body{
 .dimmed-overlay.active{
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 

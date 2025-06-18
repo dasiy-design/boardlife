@@ -1,0 +1,72 @@
+#rank .rank-item{
+  width: 100%;
+  max-width: 380px;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+#rank .rank-item:last-child{
+  margin-bottom: 40px;
+}
+#rank .rank-img {
+  position: relative;
+}
+
+#rank .rank-img img{
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+#rank .rank-img .rank{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: var(--color-black);
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  border-radius: 3px 0 3px 0;
+}
+
+#rank .rank-top{
+  display: flex;
+}
+#rank .rank-top h3{
+  margin-bottom: 10px;
+}
+#rank .rank-top p{
+  color: var(--color-gray-6);
+  line-height: 24px;
+  word-break: keep-all;
+}
+#rank .rank-top p.no-desc{
+  color: var(--color-gray-c);
+  font-size: 16px;
+}
+#rank .rank-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#rank .rank-bottom span{
+  width: 2px;
+  height: 15px;
+  background: var(--color-primary);
+}
+#rank .rank-desc{
+  display: flex;
+  justify-content: center;
+}
+#rank .rank-desc:last-child{
+  border-right: none;
+}
+#rank .rank-desc i{
+  color: var(--color-secondary);
+  margin-right: 5px;
+}

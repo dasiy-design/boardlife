@@ -2,10 +2,442 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/common/favicon.png">
+
 </head>
 <body>
+  <!-- header -->
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
+      <div class="header-icons">
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은 <br />보드라이프 및 보드라이프 이용자에게 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
+  </header>
+
+  <main>
+    <section id="rank">
+      <div class="title-wrap" >
+        <a href="#"><i class="xi-angle-left"></i></a>
+        <div class="title">
+          <h1>게임 순위</h1>
+        </div>
+      </div>
+
+      <div class="swiper tabSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button active">전체 </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">실시간</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">한달</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">수상작</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrap">
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">1</div>
+              <img src="assets/images/rank/rank1.png" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>브라스: 버밍엄</h3>
+              <p>전략적인 운하와 철도 건설로
+              네트워크를 확장해보세요!</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.5</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60-120분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">14세 이상</p>
+            </div>       
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">2</div>
+              <img src="assets/images/rank/rank2.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>글룸헤이븐</h3>
+              <p>카드를 활용해 몬스터를 물리치고 퀘스트를 완료하며 멋진 이야기를 만들어보세요!</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.5</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">1-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60-120분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">14세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">3</div>
+              <img src="assets/images/rank/rank3.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>쓰루 디 에이지스: 문명에 관한 새로운 이야기</h3>
+              <p>역사를 통해 자기만의 길을 개척하며 시대를 초월하는 문명을 설계하세요.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.4</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">120분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">14세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">4</div>
+              <img src="assets/images/rank/rank4.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>팬데믹 레거시: 시즌 1</h3>
+              <p>전 세계에 변이하는 질병이 확산되고 있습니다. 당신의 팀은 인류를 구할 수 있을까요?</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.4</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">13세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">5</div>
+              <img src="assets/images/rank/rank5.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>가이아 프로젝트</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.4</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">13세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">6</div>
+              <img src="assets/images/rank/rank6.png" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>버라지</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.3</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">1-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60-120분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">14세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">7</div>
+              <img src="assets/images/rank/rank7.png" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>원더스 대결</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.3</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">30분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">10세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">8</div>
+              <img src="assets/images/rank/rank8.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>버건디의 성</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.3</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">2-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">30-90분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">12세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">9</div>
+              <img src="assets/images/rank/rank9.jpg" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>푸에르토리코</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.3</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">3-5명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">90-150분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">12세 이상</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rank-item">
+          <div class="rank-top">
+            <div class="rank-img">
+              <div class="rank">10</div>
+              <img src="assets/images/rank/rank10.png" alt="보드게임 사진">
+            </div>
+            <div class="rank-title">
+              <h3>칸반 EV</h3>
+              <p class="no-desc">설명이 없습니다.</p>
+            </div>
+          </div>
+          <div class="rank-bottom">
+            <div class="rank-desc">    
+              <i class="xi-star"></i>
+              <p class="middle">8.3</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">1-4명</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">60-180분</p>
+            </div>
+            <span></span>
+            <div class="rank-desc">    
+              <p class="middle">12세 이상</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
   
+  <script src="/assets/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 </body>
 </html>

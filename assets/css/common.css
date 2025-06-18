@@ -95,18 +95,6 @@ p.small{
   font-size: 14px;
 }
 
-/* 로고 */
-.logo a{
-  font-family: "Baloo 2", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 32px;
-  color: var(--color-primary);
-}
-.logo span{
-  color: var(--color-secondary);
-}
-
 /* common items_________________________________ */
 
 /* 타이틀 정렬 */
@@ -202,78 +190,22 @@ p.small{
   padding: 0 10px;
   line-height: 26px;
   background-color: white;
-  color: var(--color-primary);
-  font-size: 14px;
 }
 
-/* 게시글 카드 */
-.board-card{
-  padding: 20px;
-  width: 100%;
-  max-width: 380px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+
+/* 로고 */
+.logo a{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--color-primary);
 }
-.board-card .card-profile{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 25px;
-  margin-bottom: 40px;
+.logo span{
+  color: var(--color-secondary);
 }
-.board-card .card-profile .name{
-  display: flex;
-}
-.board-card .card-profile i{
-  font-size: 20px;
-  margin-right: 5px;
-}
-.board-card .card-profile img{
-  width: 20px;
-  margin-right: 5px;
-}
-.board-card .card-content{
-  margin: 0 auto 40px;
-}
-.board-card .card-content h4{
-  margin-bottom: 15px;
-}
-.board-card .card-content img{
-  margin-bottom: 15px;
-  width: 340px;
-  height: 172px;
-  object-fit: cover;
-  border-radius: 3px;
-}
-.board-card .card-content p{
-  width: 340px;
-  height: 65px;
-  overflow: hidden;
-  line-height: 17px;
-}
-.board-card .card-bottom{
-  display: flex;
-  justify-content: space-between;
-}
-.board-card .card-bottom .card-bt-right{
-  display: flex;
-  column-gap: 15px;
-}
-.board-card .card-bottom p,
-.board-card .card-bottom i{
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--color-gray-6);
-}
-.board-card .card-bottom .heart i{
-  font-size: 16px;
-}
-.board-card .card-bottom .heart,
-.board-card .card-bottom .comment{
-  display: flex; 
-  column-gap: 5px;
-}
+
+
 
 /* 카드 */
 .card{
@@ -297,18 +229,55 @@ p.small{
   background-color: var(--color-primary);
   color: white;
 }
-.tab-wrap{
-  display: flex;
+
+/* 탭 스와이퍼 */
+.tabSwiper {
   width: 100%;
-  max-width: 430px;
-  padding-left: 25px;
   height: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 0 40px;
+  margin-bottom: 40px;
+  padding-left: 25px;
 }
-.tab-items{
-  width: 100%;
+.tabSwiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+/* 토글 탭버튼 */
+.toggle.tab-wrap{
+  overflow: visible;
+}
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: var(--color-gray-light);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.custom-dropdown .dropdown-menu li {
+  padding: 0 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu li:hover {
+  color: #f2f2f2;
+  background-color: var(--color-primary);
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.open {
+  display: block;
 }
 
 /* 하단 버튼 */

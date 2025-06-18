@@ -2,10 +2,170 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>보드라이프</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
 <body>
+  <!-- header -->
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
+      <div class="header-icons">
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은 <br />보드라이프 및 보드라이프 이용자에게 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
+  </header>
+
+  <main>
+    <section id="cafe">
+      <div class="title-wrap" >
+        <a href="#"><i class="xi-angle-left"></i></a>
+        <div class="title">
+          <h1>보드게임 카페</h1>
+        </div>
+      </div>
+
+      <div class="container-wrap">
+        <div class="card cafe-item">
+          <img src="assets/images/cafe/cafe1.jpg" alt="카페이미지">
+
+          <div class="cafe-desc">
+            <div class="cafe-title">
+              <h3>플레이보드</h3>
+              <i class="xi-heart-o"></i>
+            </div>
+            <p class="small">서울,마포구</p>
+            <p>홍대에 위치한 많은 게임을 보유하고 있는
+            클래식 보드게임카페</p>
+          </div>
+        </div>
+
+        <div class="card cafe-item">
+          <img src="assets/images/cafe/cafe2.png" alt="카페이미지">
+
+          <div class="cafe-desc">
+            <div class="cafe-title">
+              <h3>밤새보드</h3>
+              <i class="xi-heart-o"></i>
+            </div>
+            <p class="small">서울,마포구</p>
+            <p>홍대 24시 무인 보드게임카페 밤새보드</p>
+          </div>
+        </div>
+        
+        <div class="card cafe-item">
+          <img src="assets/images/cafe/cafe3.png" alt="카페이미지">
+
+          <div class="cafe-desc">
+            <div class="cafe-title">
+              <h3>삼구오구 보드게임카페</h3>
+              <i class="xi-heart-o"></i>
+            </div>
+            <p class="small">서울,송파구</p>
+            <p>가성비 최고 24시간 무제한 요금제</p>
+          </div>
+        </div>
+
+        <div class="card cafe-item">
+          <img src="assets/images/cafe/cafe4.jpg" alt="카페이미지">
+
+          <div class="cafe-desc">
+            <div class="cafe-title">
+              <h3>위치스브루</h3>
+              <i class="xi-heart-o"></i>
+            </div>
+            <p class="small">인천,계양구</p>
+            <p>인천 계양구. 3100개 이상의 보드게임을 
+            보유하고 있는 카페 입니다.</p>
+          </div>
+        </div>
+
+        <div class="card cafe-item">
+          <img src="assets/images/cafe/cafe5.jpg" alt="카페이미지">
+
+          <div class="cafe-desc">
+            <div class="cafe-title">
+              <h3>미르코보드게임카페 기업도시점</h3>
+              <i class="xi-heart-o"></i>
+            </div>
+            <p class="small">강원특별자치도,원주시</p>
+            <p>초저렴, 신작게임 다양함, 요청시 구매해줌</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
   
+  <script src="/assets/js/header.js"></script>
 </body>
 </html>

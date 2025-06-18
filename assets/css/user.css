@@ -1,0 +1,125 @@
+/* user 공통 */
+input.user-form{
+  width: 380px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid var(--color-gray-light);
+  font-size: 16px;
+}
+input.user-form::placeholder{
+  color: var(--color-gray-6); 
+}
+input.user-form:focus{
+  border-color: var(--color-primary);
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+.checkbox input[type="checkbox"]{
+  display: none;
+}
+.checkbox label{
+  display: block;
+  width:24px;
+  height:24px;
+  margin-right: 10px;
+}
+.checkbox input[type="checkbox"]+label{ 
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-image: url('../images/common/unchecked.png'); /*off 이미지*/
+}
+.checkbox input[type="checkbox"]:checked+label{
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-image: url('../images/common/checked.png'); /*on 이미지*/
+}
+
+/* login_________________________________________ */
+
+#login{
+  height: 100vh;
+}
+
+#login .title-wrap .title h1{
+  margin-bottom: 0;
+}
+#login .login-bottom{
+  color: var(--color-gray-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#login .login-bottom a{
+  color: var(--color-gray-6);
+  font-size: 14px;
+}
+#login .bottom-btn{
+  margin: 40px 0;
+  cursor: pointer;
+}
+
+#login .social-btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#login .social-btns a{
+  width: 116px;
+  height: 65px;
+  background-color: var(--color-gray-light);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .login-naver{
+  color: #03C75A;
+  font-size: 30px;
+}
+#login .login-google{
+  color: #E94335;
+  font-size: 24px;
+}
+#login .login-facebook{
+  color: #2064B3;
+  font-size: 24px;
+}
+
+#login .go-join{
+  text-align: center;
+}
+#login .go-join p{
+  color: var(--color-gray-6);
+  margin-bottom: 20px;
+}
+#login .go-join a{
+  font-size: 18px;
+}
+
+/* join_________________________________________ */
+#join .meeple-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#join .meeple-line img{
+  height: 20px;
+}
+#join .join-bottom{
+  padding: 20px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#join .join-bottom .checkbox{
+  margin-bottom: 40px;
+}
+
+#join .join-bottom .checkbox p{
+  margin-left: 10px;
+}

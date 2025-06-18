@@ -28,6 +28,7 @@
   <div class="tab-button">
     전체
   </div>
+  
   <div class="tab-wrap">
     <div class="tab-items">
       <a href="#none" class="tab-button active">전체</a>
@@ -117,49 +118,27 @@
   </div>
 
 
-
-  <div class="write-btn">
-    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
-  </div>
-
-  <!-- 미니탭 -->
-  <div class="mini-tab">
-    후기
-  </div>
-
-  <!-- 게시글 카드 -->
-  <div class="board-card">
-    <div class="card-profile">
-      <div class="name">
-        <i class="xi-profile"></i>
-        <p class="middle">리클러스</p>
+  <!-- 토글 탭버튼 -->
+  <div class="toggle tab-wrap">
+    <div class="tab-items">
+      <div class="custom-dropdown tab-button active" id="Dropdown">
+        <span class="selected-text">종로구</span>
+        <i class="xi-angle-down"></i>
+        <ul class="dropdown-menu">
+          <li data-value="종로">종로구</li>
+          <li data-value="강남">강남구</li>
+          <li data-value="강동">강동구</li>
+          <li data-value="서초">서초구</li>
+          <li data-value="마포">마포구</li>
+        </ul>
       </div>
-      <div class="mini-tab">
-        후기
-      </div>
-    </div>
-    <div class="card-content">
-      <h4>최근 즐긴 게임들 간단한 후기</h4>
-      <img src="assets/images/board/bd-img1.png" alt="게임이미지">
-      <p class="small">
-        아 요거는 한 판 간신히 해봤네요.<br>
-        담주부터 슬슬 해보려고요. 후기는 다음으미룰까 했는데, 챕터마다 클리어 조건을 주아이템도 하나 주는 그런건데, 살짝 맛만 봤지솔플러분들 간보지 마시고 그냥 츄라이츄라하시라는 말씀 드리고 가도 될 것 같아용.
-      </p>
-    </div>
-    <div class="card-bottom">
-      <p>조회 541</p>
-      <div class="card-bt-right">
-        <div class="heart">
-          <i class="xi-heart-o"></i>
-          <p>18</p>
-        </div>
-        <div class="comment">
-          <i class="fa-regular fa-comment"></i>
-          <p>23</p>
-        </div>
-      </div>
+      <a href="#none" class="tab-button active">인기순</a>
+      <a href="#none" class="tab-button">추천순</a>
     </div>
   </div>
 
+
+
+  <script src="/assets/js/tab.js"></script>
 </body>
 </html>

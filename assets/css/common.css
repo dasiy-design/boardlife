@@ -157,7 +157,7 @@ p.small{
   max-width: 430px;
   padding-left: 25px;
   height: 40px;
-  overflow: hidden;
+  overflow: visible;
   white-space: nowrap;
   margin: 0 0 40px;
 }
@@ -419,4 +419,40 @@ p.small{
 .board-card .card-bottom .comment{
   display: flex; 
   column-gap: 5px;
+}
+
+
+/* 토글 탭버튼 */
+.toggle.tab-wrap{
+  overflow: visible;
+}
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #f2f2f2;
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.custom-dropdown .dropdown-menu li {
+  padding: 0 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu li:hover {
+  color: #f2f2f2;
+  background-color: var(--color-primary);
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.open {
+  display: block;
 }

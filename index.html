@@ -2,10 +2,178 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>boardlife</title>
-  <link rel="stylesheet" href="">
+  <title>BOARDLIFE</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 </head>
+
 <body>
-  
+
+
+  <main>
+    <!-- ad banner img -->
+    <section id="banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/images/main/banner1.png" alt="스토리폴드 야생의 숲 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner2.png" alt="쿠키요미x오디야 선주문 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner3.png" alt="하트오브크라운 선주문 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner4.jpg" alt="더 콜렉터 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner5.png" alt="럼블네이션 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner6.png" alt="헤레디티 광고배너">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/banner7.png" alt="푸들택시 광고배너">
+          </div>
+        </div>
+      </div>
+        <!-- 인디케이터 모양이랑 색상 바꾸기 -->
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet-active">
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- category -->
+    <section id="home-icons">
+      <div class="icons-item">
+        <div class="icons">
+          <div class="basic">
+            <img src="/assets/images/main/m1.png" alt="입문추천">
+            <p class="small">입문추천</p>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="maina">
+            <img src="/assets/images/main/m2.png" alt="매니아층">
+            <p class="small">매니아</p>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="couple">
+            <img src="/assets/images/main/m3.png" alt="커플추천">
+          <p class="small">커플</p>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="puzzle">
+            <img src="/assets/images/main/m4.png" alt="타일놓기">
+            <p class="small">타일놓기</p>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="mafia">
+            <img src="/assets/images/main/m5.png" alt="마피아">
+            <p class="small">마피아</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- best rank(미완성 / 스와이프 효과만 하면 됨) -->
+    <section id="best-ranking">
+      <div class="title-wrap">
+        <h1>실시간 베스트 게임</h1>
+        <p>실시간 보드게임 순위</p>
+      </div>
+      <div class="best-wrap">
+        <ul class="best-rank">
+          <li>
+            <h6>1</h6>
+            <img src="/assets/images/main/b1.jpg" alt="베스트게임 1위">
+            <h2>씨볼루션</h2>
+          </li>
+
+          <li>
+            <h6>2</h6>
+            <img src="/assets/images/main/b2.jpg" alt="베스트게임 2위">
+            <h2>셰클턴 베이스</h2>
+          </li>
+
+          <li>
+            <h6>3</h6>
+            <img src="/assets/images/main/b3.jpg" alt="베스트게임 3위">
+            <h2>갱스터</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="more-btn">
+        <p>더보기</p>
+      </div>
+    </section>
+
+    <!-- best post -->
+    <section id="best-post">
+      <div class="card-container">
+        <div class="post-text">
+          <h3>베스트 게시글
+          <i class="xi-angle-right"></i>
+          </h3>
+        </div>
+        <ul class="card">
+          <li class="card-wrap">
+            <div class="card-top">
+              <i class="xi-profile"></i>
+              <p>NullPi</p>
+            </div>
+            <div class="card-item">
+              <img src="/assets/images/main/p1.jpg" alt="아이디 NullPi님이 작성한 제목: 글재주없는 사람의 첫 후기 게시글">
+              <p class="middle">이전부터 개인적으로 한줄평만 기록하다가 첫 후기를 적어보네요
+              글재주는 없어서 대충 느낀점을 적는 한줄평 정도만 적을듯합니다.        첫번째 게임은 갈릴레오 갈...</p>
+            </div>
+            <div class="caption">
+              <div class="watch">
+                <p class="small">조회 1,180</p>
+              </div>
+                <div class="reaction">
+                  <i class="xi-heart"></i>26
+                    <i class="fa-regular fa-comment"></i>23
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay:{
+        delete: 1500,
+      }
+    });
+  </script>
 </body>
 </html>

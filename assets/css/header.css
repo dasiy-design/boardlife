@@ -32,6 +32,7 @@ body{
   /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
+  color: var(--color-primary);
 }
 #main-header .header-icons{
   font-size: 25px;
@@ -46,7 +47,7 @@ body{
   top: 0;
   width: 80%;
   max-width: 300px;
-  height: 930px;
+  height: 800px;
   right: 0px;
   background-color: white;
   border-radius: 20px 0 0 0 ;
@@ -164,6 +165,7 @@ body.menu-open{
 
 .menu-footer{
   width: 100%;
+  max-width: 360px;
   height: 146px;
   background-color: #F6FAFF;
 }
@@ -178,3 +180,4 @@ body.menu-open{
   color: var(--color-gray9);
   margin-top: 14px;
 }
+

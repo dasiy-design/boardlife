@@ -7,23 +7,42 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
-<body>
+<body class="common-body">
 
+  <!-- 로고 -->
   <div class="logo">
     BOARD<span>LIFE</span>
   </div>
+
+  <!-- 타이틀 정렬 -->
+  <div class="title-wrap">
+    <a href="#">
+      <i class="xi-angle-left"></i>
+    </a>
+    <div class="title">
+      <h1>게시판</h1>
+    </div>
+  </div>
+
+  <!-- 탭버튼 -->
   <div class="tab-button">
     전체
   </div>
-
-  <div class="write-btn">
-    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
+  <div class="tab-wrap">
+    <div class="tab-items">
+      <a href="#none" class="tab-button active">전체</a>
+      <a href="#none" class="tab-button">베스트</a>
+      <a href="#none" class="tab-button">신규</a>
+      <a href="#none" class="tab-button">팔로우</a>
+    </div>
   </div>
 
+  <!-- 하단 버튼 -->
   <div class="bottom-btn">
     <h3>로그인</h3>
   </div>
 
+  <!-- 아이콘 모음 -->
   <div class="icons">  
     <i class="xi-heart"></i>
     <i class="xi-home"></i>
@@ -61,6 +80,49 @@
     </div>
   </div>
 
+
+  <div class="write-btn">
+    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
+  </div>
+
+  <!-- 미니탭 -->
+  <div class="mini-tab">
+    후기
+  </div>
+
+  <!-- 게시글 카드 -->
+  <div class="board-card">
+    <div class="card-profile">
+      <div class="name">
+        <i class="xi-profile"></i>
+        <p class="middle">리클러스</p>
+      </div>
+      <div class="mini-tab">
+        후기
+      </div>
+    </div>
+    <div class="card-content">
+      <h4>최근 즐긴 게임들 간단한 후기</h4>
+      <img src="assets/images/board/bd-img1.png" alt="게임이미지">
+      <p class="small">
+        아 요거는 한 판 간신히 해봤네요.<br>
+        담주부터 슬슬 해보려고요. 후기는 다음으미룰까 했는데, 챕터마다 클리어 조건을 주아이템도 하나 주는 그런건데, 살짝 맛만 봤지솔플러분들 간보지 마시고 그냥 츄라이츄라하시라는 말씀 드리고 가도 될 것 같아용.
+      </p>
+    </div>
+    <div class="card-bottom">
+      <p>조회 541</p>
+      <div class="card-bt-right">
+        <div class="heart">
+          <i class="xi-heart-o"></i>
+          <p>18</p>
+        </div>
+        <div class="comment">
+          <i class="fa-regular fa-comment"></i>
+          <p>23</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>

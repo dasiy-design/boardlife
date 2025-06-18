@@ -7,7 +7,6 @@
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
-
 /* color */
 :root{
   --color-primary: #4A90E2;
@@ -22,6 +21,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -35,10 +35,9 @@ html{
 
 body{
   font-family: 'Pretendard-Regular';
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   background-color: white;
-  border-radius: 20px;
-  height: 100vh;
 }
 
 li {
@@ -148,12 +147,28 @@ p{
   font-weight: 400;
   font-size: 18px;
 }
-p.small{
+p.middle{
   font-weight: 400;
   font-size: 16px;
 }
+p.small{
+  font-weight: 400;
+  font-size: 14px;
+}
 
+/* 로고 */
+.logo a{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--color-primary);
+}
+.logo span{
+  color: var(--color-secondary);
+}
 
+/* common items_________________________________ */
 
 /* 타이틀 정렬 */
 .title-wrap{
@@ -164,6 +179,14 @@ p.small{
 .title-wrap i{
   position: absolute;
   top: 5px;
+  margin: 40px 25px;
+  width: 100%;
+  max-width: 380px;
+}
+.title-wrap i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   font-size: 25px;
   font-weight: 700;
@@ -176,4 +199,150 @@ p.small{
 }
 .title-wrap .title h1{
   margin-bottom: 20px;
+}
+
+/* 카드 */
+.card{
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+/* 탭버튼 */
+.tab-button{
+  display: inline-block;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 25px;
+  line-height: 40px;
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
+  margin-right: 20px;
+}
+.tab-button.active{
+  background-color: var(--color-primary);
+  color: white;
+}
+.tab-wrap{
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+  padding-left: 25px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 0 40px;
+}
+.tab-items{
+  width: 100%;
+}
+
+/* 하단 버튼 */
+.bottom-btn{
+  background-color: var(--color-primary);
+  width: 100%;
+  max-width: 380px;
+  height: 65px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* 아이콘 모음 */
+.icons{
+  font-size: 36px;
+  color: #222222;
+}
+.write-btn{
+  width: 65px;
+  height: 65px;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 미니 탭 */
+.mini-tab{
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid var(--color-primary);
+  height: 26px;
+  padding: 0 10px;
+  line-height: 26px;
+  background-color: white;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+/* 게시글 카드 */
+.board-card{
+  padding: 20px;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.board-card .card-profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  margin-bottom: 40px;
+}
+.board-card .card-profile .name{
+  display: flex;
+}
+.board-card .card-profile i{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.board-card .card-profile img{
+  width: 20px;
+  margin-right: 5px;
+}
+.board-card .card-content{
+  margin: 0 auto 40px;
+}
+.board-card .card-content h4{
+  margin-bottom: 15px;
+}
+.board-card .card-content img{
+  margin-bottom: 15px;
+  width: 340px;
+  height: 172px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.board-card .card-content p{
+  width: 340px;
+  height: 65px;
+  overflow: hidden;
+  line-height: 17px;
+}
+.board-card .card-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.board-card .card-bottom .card-bt-right{
+  display: flex;
+  column-gap: 15px;
+}
+.board-card .card-bottom p,
+.board-card .card-bottom i{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-gray-6);
+}
+.board-card .card-bottom .heart i{
+  font-size: 16px;
+}
+.board-card .card-bottom .heart,
+.board-card .card-bottom .comment{
+  display: flex; 
+  column-gap: 5px;
 }

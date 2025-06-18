@@ -95,18 +95,6 @@ p.small{
   font-size: 14px;
 }
 
-/* 로고 */
-.logo a{
-  font-family: "Baloo 2", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 32px;
-  color: var(--color-primary);
-}
-.logo span{
-  color: var(--color-secondary);
-}
-
 /* common items_________________________________ */
 
 /* 타이틀 정렬 */
@@ -127,6 +115,18 @@ p.small{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* 로고 */
+.logo a{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--color-primary);
+}
+.logo span{
+  color: var(--color-secondary);
 }
 
 /* 카드 */
@@ -151,18 +151,55 @@ p.small{
   background-color: var(--color-primary);
   color: white;
 }
-.tab-wrap{
-  display: flex;
+
+/* 탭 스와이퍼 */
+.tabSwiper {
   width: 100%;
-  max-width: 430px;
-  padding-left: 25px;
   height: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 0 40px;
+  margin-bottom: 40px;
+  padding-left: 25px;
 }
-.tab-items{
-  width: 100%;
+.tabSwiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+/* 토글 탭버튼 */
+.toggle.tab-wrap{
+  overflow: visible;
+}
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: var(--color-gray-light);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.custom-dropdown .dropdown-menu li {
+  padding: 0 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu li:hover {
+  color: #f2f2f2;
+  background-color: var(--color-primary);
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.open {
+  display: block;
 }
 
 /* 하단 버튼 */

@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
+
 </head>
 <body>
   <!-- header -->
@@ -94,12 +96,20 @@
         </div>
       </div>
 
-      <div class="tab-wrap">
-        <div class="tab-items">
-          <a href="#none" class="tab-button active">전체 </a>
-          <a href="#none" class="tab-button">실시간</a>
-          <a href="#none" class="tab-button">한달</a>
-          <a href="#none" class="tab-button">수상작</a>
+      <div class="swiper tabSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button active">전체 </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">실시간</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">한달</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="tab-button">수상작</a>
+          </div>
         </div>
       </div>
 
@@ -420,5 +430,14 @@
 
   </main>
   
+  <script src="/assets/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 </body>
 </html>

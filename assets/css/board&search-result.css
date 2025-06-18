@@ -1,13 +1,12 @@
 .board{
   padding: 0 25px;
 }
-.board.tab-wrap{
-  overflow: visible;
-}
-.board.tab-wrap a i{
-  font-size: 20px;
-  vertical-align: middle;
-}
+
+
+
+
+
+
 
 /* 검색 결과 */
 .result{

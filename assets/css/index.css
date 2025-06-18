@@ -126,7 +126,6 @@ main{
 }
 
 #best-post ul.card{
-  /* border: 1px solid #000; */
   width: 380px;
   height: 420px;
   display: flex;

@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <section id="login" class="container-wrap">
+    <section id="login">
       <div class="title-wrap">
         <a href="#"><i class="xi-angle-left"></i></a>
         <div class="title">
@@ -29,8 +29,41 @@
         </div>
       </div>
 
-      <input type="text" placeholder="아이디를 입력해주세요.">
-      <input type="password" placeholder="비밀번호를 입력해주세요.">
+      <div class="container-wrap">
+        <input class="user-form" type="text" placeholder="아이디를 입력해주세요." autofocus>
+        <input class="user-form" type="password" placeholder="비밀번호를 입력해주세요.">
+        
+  
+        <div class="login-bottom">
+          <div class="checkbox">
+            <input type="checkbox" id="auto-login">
+            <label for="auto-login"></label>
+            <p class="small">자동 로그인</p>
+          </div>
+          <a href="#">아이디 / 비밀번호 찾기</a>
+        </div>
+  
+        <a href="index.html" class="bottom-btn">
+          <h3>로그인</h3>
+        </a>
+  
+        <div class="social-btns">
+          <a href="#" class="login-naver">
+            <i class="xi-naver"></i>
+          </a>
+          <a href="#" class="login-google">
+            <i class="fa-brands fa-google"></i>
+          </a>
+          <a href="#" class="login-facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+  
+        <div class="go-join">
+          <p class="small">아직 보드라이프 계정이 없나요?</p>
+          <a href="join.html">회원가입 하러가기</a>
+        </div>
+      </div>
 
     </section>
   </main>

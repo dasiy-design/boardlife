@@ -40,22 +40,45 @@
   box-shadow: none;
   background: var(--color-gray-light);
 }
-.my .game .title{
+.my .game .title,
+.my .bookmark .title,
+.my .my-b .title{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-.my .game .title-l{
+.my .game .title-l,
+.my .bookmark .title-l,
+.my .my-b .title-l{
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.my .game .title a{
+.my .game .title a,
+.my .bookmark .title a,
+.my .my-b .title a{
   display: flex;
   color: var(--color-gray-6);
 }
 .my .game .game-img{
   display: flex;
   justify-content: space-between;
+}
+
+.my .game ul li a{
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+.my .game ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+
+.my .bookmark{
+  margin: 40px 0;
 }

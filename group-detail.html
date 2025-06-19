@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
@@ -87,9 +88,26 @@
   </header>
 
 
+  <main>
 
+    <!-- 타이틀 정렬 -->
+    <div class="group title-wrap">
+      <a href="#">
+        <i class="xi-angle-left"></i>
+      </a>
+      <div class="title">
+        <h3>나는 I지만 보드게임이 좋은걸</h3>
+      </div>
+    </div>
 
+    <!-- 이미지 스와이퍼 -->
+    <section>
 
+      
+
+    </section>
+
+  </main>
 
 
   <footer>
@@ -104,6 +122,13 @@
   </footer>
 
   <script src="/assets/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 
 </body>
 </html>

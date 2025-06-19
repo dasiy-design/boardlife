@@ -232,8 +232,11 @@ p.small{
 }
 .board-card .card-profile img{
   width: 20px;
+  height: 20px;
   margin-right: 5px;
+  border-radius: 50%;
 }
+
 .board-card .card-content{
   margin: 0 auto 40px;
 }

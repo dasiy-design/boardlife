@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shop</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
 <body>
   
@@ -85,6 +87,54 @@
     <div class="dimmed-overlay"></div>
   </header>
 
+  <main>
+    <div class="title-wrap">
+      <a href="#"><i class="xi-angle-left"></i></a>
+      <div class="title">
+        <h1>쇼핑</h1>
+      </div>
+    </div>
+
+    <!-- tab button -->
+  <div class="swiper tabSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#none" class="tab-button active">전체 </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none" class="tab-button">중고</a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none" class="tab-button">신규</a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none" class="tab-button">인기</a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none" class="tab-button">직거래</a>
+      </div>
+    </div>
+  </div>
+
+      <!-- 토글 탭버튼 -->
+  <!-- <div class="toggle tab-wrap"> -->
+
+  <section id="shop">
+    
+  </section>
+
+
+
+
+  <!-- 글쓰기 버튼 -->
+  <div class="write-btn">
+    <img src="assets/images/common/write.png" alt="글쓰기 아이콘">
+  </div>
+
+
+
+  </main>
+
 
 
 
@@ -92,5 +142,14 @@
 
   
   <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/tab.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 </body>
 </html>

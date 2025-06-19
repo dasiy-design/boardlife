@@ -1,0 +1,51 @@
+.group{
+  padding: 0 25px;
+}
+
+.group-card{
+  width: 380px;
+  border-bottom: 1px solid var(--color-gray-c);
+  padding: 20px;
+}
+.group-card:nth-child(1){
+  border-top: 1px solid var(--color-gray-c);
+}
+.group-card .card-top{
+  display: flex;
+  margin-bottom: 20px;
+}
+.group-card .card-top img{
+  width: 120px;
+  height:120px;
+  margin-right: 20px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+.group-card .card-top h3{
+  margin-bottom: 10px;
+}
+.group-card .card-top p{
+  height: 68px;
+  overflow: hidden;
+  line-height: 17px;
+}
+.group-card .card-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group-card .card-bottom .space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 0;
+  border-right: 1px solid var(--color-primary);
+  gap: 3px;
+}
+.group-card .card-bottom .person{
+  padding: 0 20px;
+  border-right: 1px solid var(--color-primary);
+}
+.group-card .card-bottom .age{
+  padding: 0 0 0 20px;
+}

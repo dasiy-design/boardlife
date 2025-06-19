@@ -166,8 +166,7 @@ body.menu-open{
 /* menu footer */
 
 .menu-footer{
-  width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   height: 146px;
   background-color: #F6FAFF;
 }

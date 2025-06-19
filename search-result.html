@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
@@ -89,22 +90,34 @@
   <main>
 
     <div class="result title-wrap">
-      <i class="xi-angle-left"></i>
+      <a href="search.html">
+        <i class="xi-angle-left"></i>
+      </a>
       <div class="title">
         <p>검색결과</p>
         <h1>스카이팀</h1>
       </div>
     </div>
 
-    <div class="result tab-wrap">
-      <div class="tab-items">
-        <a href="#none" class="tab-button active">
-          통합
-        </a>
-        <a href="#none" class="tab-button">게시판 </a>
-        <a href="#none" class="tab-button">게임</a>
-        <a href="#none" class="tab-button">공간</a>
-        <a href="#none" class="tab-button">쇼핑</a>
+
+    <!-- 탭 스와이퍼 -->
+    <div class="swiper tabSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button active">통합</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">게시판</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">게임</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">공간</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">쇼핑</a>
+        </div>
       </div>
     </div>
 
@@ -269,5 +282,13 @@
   </footer>
 
   <script src="/assets/js/header.js"></script>
+  <!-- 스와이퍼 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 </body>
 </html>

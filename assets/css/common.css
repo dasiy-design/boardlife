@@ -428,3 +428,9 @@ p.small{
 .dropdown-menu.open {
   display: block;
 }
+
+/* 찜하트 */
+.heart-toggle i {
+  font-size: 23px;
+  color: crimson;
+}

@@ -91,7 +91,7 @@
   <main>
 
     <!-- 타이틀 정렬 -->
-    <div class="group title-wrap">
+    <div class="group-detail title-wrap">
       <a href="#">
         <i class="xi-angle-left"></i>
       </a>
@@ -101,11 +101,51 @@
     </div>
 
     <!-- 이미지 스와이퍼 -->
-    <section>
+    <div class="group-detail swiper tabSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d1.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d2.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d3.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide last-slide">
+          <img src="assets/images/group/gr-d4.png"alt="모임이미지">
+          <div class="overlay">
+            <a href="#none"><h2>더보기</h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      
 
-    </section>
+    <div class="group-detail profile">
+      <div class="profile-top">
+        <div class="mini-tab-wrap">
+          <div class="mini-tab">
+            망우동
+          </div>
+          <div class="mini-tab">
+            68명
+          </div>
+          <div class="mini-tab">
+            20~39세
+          </div>
+        </div>
+        <div class="profile-heart">
+          <a href="#none" class="heart-toggle">
+            <i class="xi-heart-o"></i> <!-- 빈 하트 -->
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    
 
   </main>
 
@@ -122,11 +162,24 @@
   </footer>
 
   <script src="/assets/js/header.js"></script>
+  <!-- 스와이퍼 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".tabSwiper", {
       slidesPerView: 'auto',
       freeMode: true,
+    });
+  </script>
+  <!-- 찜하트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const heartBtn = document.querySelector('.heart-toggle');
+      heartBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const icon = this.querySelector('i');
+        icon.classList.toggle('xi-heart-o');
+        icon.classList.toggle('xi-heart');
+      });
     });
   </script>
 

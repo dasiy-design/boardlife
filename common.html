@@ -233,28 +233,19 @@
   </div>
 
 
-  <!-- 토글 탭버튼 -->
-  <div class="toggle tab-wrap">
-    <div class="tab-items">
-      <div class="custom-dropdown tab-button active" id="Dropdown">
-        <span class="selected-text">종로구</span>
-        <i class="xi-angle-down"></i>
-        <ul class="dropdown-menu">
-          <li data-value="종로">종로구</li>
-          <li data-value="강남">강남구</li>
-          <li data-value="강동">강동구</li>
-          <li data-value="서초">서초구</li>
-          <li data-value="마포">마포구</li>
-        </ul>
-      </div>
-      <a href="#none" class="tab-button active">인기순</a>
-      <a href="#none" class="tab-button">추천순</a>
-    </div>
+  <!-- 찜하트 -->
+  <div class="profile-heart">
+    <a href="#none" class="heart-toggle">
+      <i class="xi-heart-o"></i> <!-- 빈 하트 -->
+    </a>
   </div>
+
 
 
   <script src="/assets/js/header.js"></script>
   <script src="/assets/js/tab.js"></script>
+
+  <!-- 스와이퍼(헤더링크도 추가) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".tabSwiper", {
@@ -262,5 +253,19 @@
       freeMode: true,
     });
   </script>
+
+  <!-- 찜하트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const heartBtn = document.querySelector('.heart-toggle');
+      heartBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const icon = this.querySelector('i');
+        icon.classList.toggle('xi-heart-o');
+        icon.classList.toggle('xi-heart');
+      });
+    });
+  </script>
+
 </body>
 </html>

@@ -1,12 +1,9 @@
-main{
-  /* border: 1px solid green; */
-}
+#banner{padding-top: 130px;}
 #banner img{
   width: 430px;
   height: 430px;
   border-radius: 120px;
 }
-
 
 #banner.swiper-slide{
   text-align: center;
@@ -27,7 +24,7 @@ main{
 #home-icons{
   width: 430px;
   height: 110px;
-  padding-top: 20px;
+  padding: 20px auto;
 }
 #home-icons .icons-item{
   width: 380px;
@@ -37,24 +34,21 @@ main{
   align-items: center;
   justify-content: center;
   gap: 12px;
-  border: 1px solid blue;
 }
 #home-icons .icons-item .icons{
   text-align: center;
   width: 120px;
   height: 50px;
-  border: 1px solid #000;
   margin-bottom: 20px;
 }
 #home-icons .icons-item p.small{
   text-align: center;
   color: var(--color-gray-9);
-  border: 1px solid red;
 }
-
+/* best-ranking ALL */
 #best-ranking{
   width: 430px;
-  min-height: 680px;
+  min-height: 600px;
   justify-content: center;
   text-align: center;
   background-color: var(--color-black);
@@ -69,7 +63,7 @@ main{
 #best-ranking .title-wrap p{
   margin-top: 10px;
 }
-#best-ranking .best-wrap{
+#best-ranking .swiper .best-wrap{
   /* border: 1px solid #000; */
   position: relative;
   height: 600px;
@@ -81,7 +75,7 @@ main{
   width: 500px;
   margin: 0 auto;
 }
-#best-ranking .best-wrap ul.best-rank{
+#best-ranking .swiper .best-wrap ul.best-rank{
   border: 1px solid #000;
   display: flex;
   align-items: center;
@@ -91,7 +85,7 @@ main{
   transition: transform 0.5s ease-in-out;
   position: absolute;
   left: 50%;
-  transform: translateX(-53%);
+  transform: translateX(-50%);
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -116,15 +110,12 @@ main{
   opacity: 1; 
   z-index: 100;
 }
-
 #best-ranking .best-wrap ul.best-rank li.prev-slide,
 #best-ranking .best-ranking .best-wrap ul.best-rank li.next-slide {
     transform: scale(0.9); /* active보다는 작고 일반 li보다는 살짝 크게 */
     opacity: 0.7; /* active보다는 투명하고 일반 li보다는 선명하게 */
     z-index: 5; /* active보다는 낮고 일반 li보다는 높게 */
 }
-
-
 #best-ranking .best-wrap ul.best-rank li h6{
   position: absolute;
   font-size: 100px;
@@ -133,7 +124,6 @@ main{
   margin-left: 20px;
   z-index: 20;
 }
-
 #best-ranking .best-wrap ul.best-rank img{
   width: 280px;
   /* width: 100%; */
@@ -152,16 +142,18 @@ main{
   max-width: 100%;
 }
 
-
+/* best-post all */
 #best-post{
   height: 586px;
   background-color: #F6F6F6;
   color: var(--color-black);
+  overflow: hidden;
+  width: 430px;
 }
 
 #best-post .post-text{
   margin: 20px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 /* right arrow */
@@ -173,21 +165,70 @@ main{
   align-items: center;
 }
 
-
+/* best-post */
+#best-post .swiper{
+  width: 100%;
+  height: 500px;
+  /* padding: 0 25px; */
+}
+#best-post .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
 #best-post .board-card{
   width: 380px;
   height: 420px;
   justify-content: center;
-  margin: 20px;
   background-color: white;
-  margin-left: 24px;
-}
-
-#best-post  .board-card .card-content{
+  /* flex-shrink: 0; */
+  padding: 20px;
+  border: 1px solid red;
+  position: relative;
   margin-bottom: 10px;
 }
 
+#best-post .swiper-slide .board-card{
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+}
+#best-post .swiper-slide .card-content img{
+  object-fit: cover;
+  border: 1px solid blue;
+  width: 100%;
+}
 
-#best-post .board-card .card-porfile .name img{
+
+/* group section */
+#group{
+  width: 430px;
+  height: 600px;
+}
+#group .group-title{
+  margin: 20px;
+  padding: 10px 0;
+}
+#group .group-title i{
+  color: var(--color-gray-9);
+  font-weight: bold;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#group .group-wrap{
   border: 1px solid #000;
 }
+#group .group-card{
+  width: 380px;
+  height: 200px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  margin: 20px;
+}
+

@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         stopAutoPlay(); // 기존 인터벌 정리
         autoPlayInterval = setInterval(() => {
             nextSlide();
-        }, 2000); // 2초마다 슬라이드 전환
+        }, 3000); // 3초마다 슬라이드 전환
     }
 
     function stopAutoPlay() {

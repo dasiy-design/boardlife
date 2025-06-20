@@ -2,13 +2,11 @@
 @import url(layout.css);
 @import url(header.css);
 @import url(footer.css);
-
 @import url(index.css);
 @import url(user.css);
+@import url(board.css);
 @import url(cafe.css);
 @import url(game.css);
-@import url(board&search-result.css);
 @import url(group.css);
-@import url(group-detail.css);
-@import url(mypage.css);
-
+@import url(board&search-result.css);
+@import url(shop.css);

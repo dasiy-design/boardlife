@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
@@ -88,8 +89,6 @@
 
   <main>
 
-    
-
     <div class="top">
       <a href="#">
         <div class="write-btn">
@@ -105,17 +104,41 @@
       </div>
     </div>
   
-    <div class="board tab-wrap">
-      <div class="tab-items">
-        <a href="#none" class="tab-button">
-          전체
-          <i class="xi-angle-down"></i>
-        </a>
-        <a href="#none" class="tab-button active">베스트 </a>
-        <a href="#none" class="tab-button">신규</a>
-        <a href="#none" class="tab-button">팔로우</a>
+    <!-- 탭 스와이퍼 -->
+    <div class="swiper tabSwiper">
+      <div class="swiper-wrapper">
+        <div class="open swiper-slide">
+          <a href="#none" class="tab-button">
+            전체
+            <i class="xi-angle-down"></i>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button active">베스트</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">신규</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none" class="tab-button">팔로우</a>
+        </div>
       </div>
     </div>
+
+    <!-- 버튼 클릭시 나올 내용 -->
+    <div class="m-container">
+      <div class="modal">
+        <button class="close">
+          <i class="xi-close"></i>
+        </button>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur   adipisicing elit. Reiciendis,
+          excepturi?
+        </p>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
   
     <!-- 게시글 카드 -->
     <section class="board">
@@ -306,5 +329,37 @@
 
 
   <script src="/assets/js/header.js"></script>
+  <!-- 스와이퍼(헤더링크도 추가) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
+
+  <!-- 모달 -->
+  <script>
+    const openButton = document.querySelector('.open');
+    const container = document.querySelector('.m-container');
+    const closeButton = document.querySelector('.close');
+    const overlay = document.querySelector('.modal-overlay');
+      
+    openButton.addEventListener('click', () => {
+      container.style.display = 'flex';
+      overlay.style.display = 'block';
+    });
+    
+    closeButton.addEventListener('click', () => {
+      container.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', () => {
+    container.style.display = 'none';
+    overlay.style.display = 'none';
+    });
+  </script>
+
 </body>  
 </html>

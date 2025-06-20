@@ -1,6 +1,6 @@
 @import url(common.css);
 @import url(layout.css);
-@import url(font.css);
+@import url(/assets/font/font.css);
 @import url(header.css);
 @import url(footer.css);
 
@@ -12,6 +12,6 @@
 @import url(game.css);
 @import url(group.css);
 @import url(group-detail.css);
-@import url(board&search-result.css);
+@import url(search-result.css);
 @import url(shop.css);
 @import url(mypage.css);

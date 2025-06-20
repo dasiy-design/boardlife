@@ -31,6 +31,7 @@ html{
   padding: 0;
   color: var(--color-black);
   background-color: var(--color-gray-light);
+  scroll-behavior: smooth;
 }
 
 body{
@@ -171,6 +172,27 @@ p.small{
   font-size: 36px;
   color: #222222;
 }
+
+
+/* 탑버튼 */
+main{
+  position: relative; /* top 버튼의 기준 */
+}
+.top{
+  position: fixed;
+  right: calc(50% - 215px + 25px);
+  bottom: 100px;
+  z-index: 50;
+}
+.top i{
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+}
+
+/* 글쓰기 아이콘 */
 .write-btn{
   width: 65px;
   height: 65px;
@@ -180,6 +202,10 @@ p.small{
   align-items: center;
   justify-content: center;
 }
+
+
+
+
 
 /* 미니 탭 */
 .mini-tab{

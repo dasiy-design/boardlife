@@ -24,7 +24,7 @@
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1001; /* m-container보다 아래 또는 위로 조절 */
+  z-index: 1001; /* m-container보다 아래로 조절 */
 }
 
 .modal{

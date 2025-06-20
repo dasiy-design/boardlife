@@ -25,13 +25,14 @@ input.user-form:focus{
 }
 .checkbox label{
   display: block;
-  width:24px;
-  height:24px;
+  width:18px;
+  height:18px;
   margin-right: 10px;
 }
 .checkbox input[type="checkbox"]+label{ 
   background-repeat: no-repeat; /* 반복 방지 */
   background-image: url('../images/common/unchecked.png'); /*off 이미지*/
+  background-size: cover;
 }
 .checkbox input[type="checkbox"]:checked+label{
   background-repeat: no-repeat; /* 반복 방지 */
@@ -110,7 +111,7 @@ input.user-form:focus{
   margin-bottom: 20px;
 }
 #join .meeple-line img{
-  height: 20px;
+  height: 14px;
 }
 #join .join-bottom{
   padding: 20px 0 40px;

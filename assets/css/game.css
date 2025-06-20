@@ -1,3 +1,4 @@
+/* rank */
 #rank .rank-item{
   width: 100%;
   max-width: 380px;
@@ -52,13 +53,14 @@
 #rank .rank-bottom{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 20px;
 }
 #rank .rank-bottom span{
   width: 2px;
   height: 15px;
   background: var(--color-primary);
+  margin: 0 20px;
 }
 #rank .rank-desc{
   display: flex;
@@ -70,4 +72,50 @@
 #rank .rank-desc i{
   color: var(--color-secondary);
   margin-right: 5px;
+}
+
+/* review */
+#review .review-item{
+  width: 100%;
+  max-width: 380px;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+#review .review-top{
+  display: flex;
+}
+#review .review-top img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+#review .review-title h4{
+  margin-bottom: 10px;
+}
+#review .review-info,
+#review .review-info>div{
+  display: flex;
+  align-items: center;
+}
+#review .review-info span{
+  width: 2px;
+  height: 15px;
+  background: var(--color-primary);
+  margin: 0 20px;
+}
+#review .review-info i{
+  color: var(--color-secondary);
+  margin-right: 5px;
+}
+#review .review-desc{
+  width: 100%;
+  background-color: var(--color-gray-light);
+  margin-top: 22px;
+  padding: 15px;
+  border-radius: 3px;
+}
+#review .review-desc p{
+  line-height: 24px;
 }

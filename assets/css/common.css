@@ -208,6 +208,9 @@ p.small{
   align-items: center;
   border-radius: 8px;
 }
+.bottom-btn h4{
+  font-weight: 500;
+}
 
 /* 아이콘 모음 */
 .icons{

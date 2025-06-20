@@ -2,10 +2,235 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
 <body>
-  
+  <!-- header -->
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
+      <div class="header-icons">
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은 <br />보드라이프 및 보드라이프 이용자에게 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
+  </header>
+
+  <main>
+    <section id="search">
+      <div class="title-wrap" >
+        <a href="#"><i class="xi-angle-left"></i></a>
+        <div class="title">
+          <h1>검색</h1>
+        </div>
+      </div>
+
+      <div class="container-wrap">
+        <div class="search-bar">
+          <input class="search" type="text" placeholder="검색어를 입력하세요." autofocus>
+          <a href="#none">
+            <i class="xi-search"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="swiper tabSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#none" class="tab-button active">카페 
+                <i class="xi-close"></i>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none" class="tab-button active">브라스 
+                <i class="xi-close"></i>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none" class="tab-button active">무제한 
+                <i class="xi-close"></i>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none" class="tab-button active">스플랜더 
+                <i class="xi-close"></i>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none" class="tab-button active">중고 
+                <i class="xi-close"></i>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrap">
+        <h4>
+          지금 많이 검색되고 있는 키워드
+        </h4>
+
+        <div class="search-items">
+          <div class="search-item">
+            <div>
+              <span class="top-rank">1</span>
+              <p>전략</p>
+            </div>
+            <i class="xi-caret-up-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span class="top-rank">2</span>
+              <p>4인</p>
+            </div>
+            <i class="xi-caret-down-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span class="top-rank">3</span>
+              <p>모임</p>
+            </div>
+            <i class="xi-caret-up-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>4</span>
+              <p>보드게임 카페</p>
+            </div>
+            <i class="xi-caret-down-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>5</span>
+              <p>서울</p>
+            </div>
+            <i class="xi-caret-down-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>6</span>
+              <p>가족</p>
+            </div>
+            <i class="xi-caret-up-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>7</span>
+              <p>테마</p>
+            </div>
+            <i class="xi-caret-up-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>8</span>
+              <p>어린이</p>
+            </div>
+            <i class="xi-caret-down-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>9</span>
+              <p>협력</p>
+            </div>
+            <i class="xi-caret-up-min"></i>
+          </div>
+          <div class="search-item">
+            <div>
+              <span>10</span>
+              <p>2인</p>
+            </div>
+            <i class="xi-caret-down-min"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+  </main>
+
+  <script src="/assets/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
 </body>
 </html>

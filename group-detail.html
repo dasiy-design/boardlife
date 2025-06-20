@@ -4,27 +4,278 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>보드라이프</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/common/favicon.png">
 </head>
 <body>
   
-  <header>
-    <div class="logo">
-      BOARD<span>LIFE</span>
-    </div>
-    <nav>
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
       <div class="header-icons">
-        <i class="xi-search"></i>
-        <i class="xi-align-left"></i>
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights  reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은  <br />보드라이프 및 보드라이프 이용자에게 있습니다.  </p>
+          </div>
+        </div>
       </div>
     </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
   </header>
 
 
+  <main>
+
+    <!-- 타이틀 정렬 -->
+    <div class="group-detail title-wrap">
+      <a href="group.html">
+        <i class="xi-angle-left"></i>
+      </a>
+      <div class="title">
+        <h3>나는 I지만 보드게임이 좋은걸</h3>
+      </div>
+    </div>
+
+    <!-- 이미지 스와이퍼 -->
+    <div class="group-detail swiper tabSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d1.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d2.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/group/gr-d3.png"alt="모임이미지">
+        </div>
+        <div class="swiper-slide last-slide">
+          <img src="assets/images/group/gr-d4.png"alt="모임이미지">
+          <div class="overlay">
+            <a href="#none"><h2>더보기</h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="group-detail profile">
+      <div class="profile-top">
+        <div class="mini-tab-wrap">
+          <div class="mini-tab">
+            망우동
+          </div>
+          <div class="mini-tab">
+            68명
+          </div>
+          <div class="mini-tab">
+            20~39세
+          </div>
+        </div>
+        <div class="profile-heart">
+          <a href="#none" class="heart-toggle">
+            <i class="xi-heart-o"></i> <!-- 빈 하트 -->
+          </a>
+        </div>
+      </div>
 
+      <div class="profile-bt">
+        <div class="bt a">
+          <i class="xi-calendar"></i>
+          <p class="small">2024년 7월 19일 개설</p>
+        </div>
+        <div class="bt">
+          <i class="xi-shield-checked"></i>
+          <p class="small">본인인증 필요, 나이대 공개</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="group-detail text">
+      <p class="small">
+        안녕하세요!👋<br> 보드게임을 사랑하지만 모임은 무서운 내향형 방장입니다.<br> 특히 만들어진지 오래된 모임이나 끝나고 2차가고 술먹는 모임은 더더 부담스럽더라구요... 👉👈<br>그래서 직접 만들었습니다!!<br>저희 모임 닉값대로 대문자 I 분들 짱 많으신데 다들 어색하게 오셨다가 게임 한판만 하면 분위기 바로 풀려서 재밌게 놀고 가십니다✨<br><br>파티게임 및 가벼운 전략게임부터 머더미스터리, 테마게임, 유로게임 등등 다양한 컨셉/난이도별 벙이 열리고 있어요😉!!!<br><br> 👉낯가리는 I도, 깨발랄 E도 대환영<br>👉성별무관 2030 <br>👉모임 장소 : 중랑역 인근 (모임원 아지트) or 사가정역 인근 (제휴 보드게임카페) <br>👉모임 시간 : 1,3,5째주 금요일 저녁 + 2,4째주토요일 낮 정모 + 벙 자주 열림!! <br><br>❌종교, 포교활동 <br>❌남미새, 여미새<br> ❌노쇼<br>❌유령 이웃(한달에 1회 이상 참여 필수)<br> ❌타 보드게임 동호회 모임장/운영진 이상은 신청 금지<br><br> 그 외 기본 매너도 안지키는 분들 즉시 강퇴🤬
+      </p>
+    </section>
+
+    <section class="group-detail day">
+      <div class="title">
+        <div class="title-l">
+          <h4>일정</h4>
+          <p class="small">329</p>
+        </div>
+        <a href="#none">
+          <p class="small">더보기</p>
+          <i class="xi-angle-right"></i>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <h4>6/21 (토) 오후 1:00</h4>
+          <div class="mini-tab">
+            D-6
+          </div>
+        </div>
+        <div class="card-bt">
+          <img src="assets/images/group/gr-d5.png" alt="백로성">
+          <div class="card-right">
+            <p>백로성</p>
+            <div>
+              <div class="money">
+                <i class="fa-solid fa-coins"></i>
+                <p class="small">n</p>
+              </div>
+              <div class="people">
+                <i class="xi-users"></i>
+                <p class="small">4/4명</p>
+                <p class="small">모집마감</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="group-detail review">
+      <div class="title">
+        <div class="title-l">
+          <h4>모임 후기</h4>
+          <p class="small">543</p>
+        </div>
+        <a href="#none">
+          <p class="small">더보기</p>
+          <i class="xi-angle-right"></i>
+        </a>
+      </div>
+
+      <div class="board-card">
+        <div class="card-profile">
+          <div class="name">
+            <i class="xi-profile"></i>
+            <p class="middle">미니</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="small">
+            망우별채에서 진행한 첫 평일 모임!!!!😍 더운데 다들 오시느라 고생하셨어용 ㅠㅠㅠ💦 참가자 : @하루하루@환이@삼겹살조아@부기@티나 총 5분이 모였습니다!!!! 사진은 못찍었지만 첫번째 게임으로 텔레스트레이션🖌️ 개인적으로 화차같은 댐 그림이 제일 기억에 남네요
+          </p>
+        </div>
+        <div class="card-bottom">
+          <p>11개월전</p>
+          <div class="card-bt-right">
+            <div class="heart">
+              <i class="xi-heart-o"></i>
+              <p>5</p>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-comment"></i>
+              <p>4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+
+  <footer>
+    <nav id="navigation">
+      <ul class="nav-bar">
+        <li><i class="xi-home"></i></li>
+        <li><i class="xi-comment"></i></li>
+        <li><i class="xi-trophy"></i></li>
+        <li><i class="xi-user"></i></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/assets/js/header.js"></script>
+  <!-- 스와이퍼 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 'auto',
+      freeMode: true,
+    });
+  </script>
+  <!-- 찜하트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const heartBtn = document.querySelector('.heart-toggle');
+      heartBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const icon = this.querySelector('i');
+        icon.classList.toggle('xi-heart-o');
+        icon.classList.toggle('xi-heart');
+      });
+    });
+  </script>
 
 </body>
 </html>

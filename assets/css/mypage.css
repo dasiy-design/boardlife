@@ -1,0 +1,84 @@
+.my{
+  padding: 0 25px;
+}
+
+.my .profile{
+  padding: 30px 20px;
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+}
+.my .profile .xi-pen{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 24px;
+  color: var(--color-primary)
+}
+.my .profile img{
+  width: 84px;
+  height: 84px;
+  margin-right: 15px;
+}
+.my .profile .profile-right{
+  margin: 10px 0;
+}
+.my .profile .profile-name{
+  display: flex;
+  margin-bottom: 5px;
+}
+.my .profile .profile-name h3{margin-right: 15px;}
+.my .profile .profile-name .lv{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.my .game{
+  padding: 20px;
+  box-shadow: none;
+  background: var(--color-gray-light);
+}
+.my .game .title,
+.my .bookmark .title,
+.my .my-b .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.my .game .title-l,
+.my .bookmark .title-l,
+.my .my-b .title-l{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.my .game .title a,
+.my .bookmark .title a,
+.my .my-b .title a{
+  display: flex;
+  color: var(--color-gray-6);
+}
+.my .game .game-img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.my .game ul li a{
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+.my .game ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+
+.my .bookmark{
+  margin: 40px 0;
+}

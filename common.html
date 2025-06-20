@@ -106,6 +106,13 @@
   <div class="tab-button">
     전체
   </div>
+  
+  <div class="tab-wrap">
+    <div class="tab-items">
+      <a href="#none" class="tab-button active">전체</a>
+      <a href="#none" class="tab-button">베스트</a>
+      <a href="#none" class="tab-button">신규</a>
+      <a href="#none" class="tab-button">팔로우</a>
 
   <!-- 탭 스와이퍼 -->
   <div class="swiper tabSwiper">
@@ -170,6 +177,7 @@
     <i class="xi-cog"></i>
     <i class="xi-bookmark"></i>
     <i class="xi-pen"></i>
+    <i class="xi-maker"></i>
 
     <i class="fa-solid fa-dice-one"></i>
     <i class="fa-solid fa-dice-two"></i>
@@ -224,15 +232,40 @@
     </div>
   </div>
 
+
+  <!-- 찜하트 -->
+  <div class="profile-heart">
+    <a href="#none" class="heart-toggle">
+      <i class="xi-heart-o"></i> <!-- 빈 하트 -->
+    </a>
+  </div>
+
+
+
   <script src="/assets/js/header.js"></script>
   <script src="/assets/js/tab.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- 스와이퍼(헤더링크도 추가) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".tabSwiper", {
       slidesPerView: 'auto',
       freeMode: true,
     });
   </script>
+
+  <!-- 찜하트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const heartBtn = document.querySelector('.heart-toggle');
+      heartBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const icon = this.querySelector('i');
+        icon.classList.toggle('xi-heart-o');
+        icon.classList.toggle('xi-heart');
+      });
+    });
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,134 @@
+.group-detail{
+  padding: 0 25px;
+}
+
+.group-detail.title-wrap i{
+  position: absolute;
+  top:0px;
+}
+
+.group-detail.swiper {
+  width: 100%;
+  height: 228px;
+  margin-bottom: 20px;
+}
+.group-detail.swiper .swiper-wrapper .swiper-slide{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+/* 마지막 슬라이드에 오버레이 */
+.group-detail.swiper .swiper-slide.last-slide {
+  position: relative;
+  overflow: hidden;
+}
+.group-detail.swiper .swiper-slide.last-slide .overlay a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.group-detail.profile{
+  margin-bottom: 40px;
+}
+
+.group-detail.profile .profile-top{
+  position: relative;
+}
+.group-detail.profile .mini-tab-wrap{
+  margin-bottom: 20px;
+}
+.group-detail.profile .mini-tab{
+  margin-right: 10px;
+}
+.group-detail.profile .profile-top a{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.group-detail .profile-bt .bt{
+  display: flex;
+  gap: 10px;
+  color: var(--color-gray-6);
+}
+.group-detail .profile-bt .bt.a{
+  margin-bottom: 5px;
+}
+
+.group-detail.text{
+  margin-bottom: 40px;
+}
+
+
+.group-detail.day .title,
+.group-detail.review .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.group-detail.day .title-l,
+.group-detail.review .title-l{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.group-detail.day .title-l p,
+.group-detail.review .title-l p{
+  color: var(--color-gray-6)
+}
+.group-detail.day .title a,
+.group-detail.review .title a{
+  display: flex;
+  color: var(--color-gray-6);
+}
+
+.group-detail.day{
+  margin-bottom: 40px;
+}
+.group-detail.day .card{
+  padding: 20px 25px;
+}
+.group-detail.day .card .card-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.group-detail.day .card .card-bt{
+  display: flex;
+}
+.group-detail.day .card img{
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+.group-detail.day .card .card-right{
+  margin-top: 20px;
+}
+.group-detail.day .card .card-right p{
+  margin-bottom: 10px;
+}
+.group-detail.day .card .card-right .money,
+.group-detail.day .card .card-right .people{
+  display: flex;
+  gap: 15px;
+  color: var(--color-gray-6);
+}
+.group-detail.day .card-right .people p:last-child{
+  color: var(--color-secondary);
+}
+

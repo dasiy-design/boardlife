@@ -117,6 +117,82 @@ p.small{
   align-items: center;
 }
 
+/* 카드 */
+.card{
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+/* 탭버튼 */
+.tab-button{
+  display: inline-block;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 25px;
+  line-height: 40px;
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
+  margin-right: 20px;
+}
+.tab-button.active{
+  background-color: var(--color-primary);
+  color: white;
+}
+.tab-wrap{
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+  padding-left: 25px;
+  height: 40px;
+  overflow: visible;
+  white-space: nowrap;
+  margin: 0 0 40px;
+}
+.tab-items{
+  width: 100%;
+}
+
+/* 하단 버튼 */
+.bottom-btn{
+  background-color: var(--color-primary);
+  width: 100%;
+  max-width: 380px;
+  height: 65px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* 아이콘 모음 */
+.icons{
+  font-size: 36px;
+  color: #222222;
+}
+.write-btn{
+  width: 65px;
+  height: 65px;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 미니 탭 */
+.mini-tab{
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid var(--color-primary);
+  height: 26px;
+  padding: 0 10px;
+  line-height: 26px;
+  background-color: white;
+}
+
+
 /* 로고 */
 .logo a{
   font-family: "Baloo 2", sans-serif;
@@ -128,6 +204,8 @@ p.small{
 .logo span{
   color: var(--color-secondary);
 }
+
+
 
 /* 카드 */
 .card{
@@ -313,4 +391,46 @@ p.small{
 .board-card .card-bottom .comment{
   display: flex; 
   column-gap: 5px;
+}
+
+
+/* 토글 탭버튼 */
+.toggle.tab-wrap{
+  overflow: visible;
+}
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: var(--color-gray-light);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.custom-dropdown .dropdown-menu li {
+  padding: 0 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-dropdown .dropdown-menu li:hover {
+  color: var(--color-gray-light);
+  background-color: var(--color-primary);
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.open {
+  display: block;
+}
+
+/* 찜하트 */
+.heart-toggle i {
+  font-size: 30px;
+  color: crimson;
 }

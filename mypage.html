@@ -9,22 +9,290 @@
 </head>
 <body>
   
-  <header>
-    <div class="logo">
-      BOARD<span>LIFE</span>
-    </div>
-    <nav>
+  <header id="main-header">
+    <div class="header-conatiner">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
       <div class="header-icons">
-        <i class="xi-search"></i>
-        <i class="xi-align-left"></i>
+        <a href="#"><i class="xi-search"></i></a>
+        <div class="menu-icon"><img src="/assets/images/common/menu.svg" alt="햄버거메뉴 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <nav class="tab-menu">
+      <div class="menu-header">
+        <h3><span>별밤</span>님</h3>
+        <div class="menu-icons">
+          <i class="xi-profile"></i>
+          <i class="xi-cog"></i>
+          <i class="xi-close"></i>
+        </div>
+      </div>
+
+      <ul class="main-menu-list">
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게시판</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">게임</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">순위</a></li>
+            <li><a href="#">평가</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">공간</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">모임</a></li>
+            <li><a href="#">보드게임 카페</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#" class="menu-category">쇼핑</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-category">마이페이지</a>
+          <i class="xi-plus toggle-submenu-icon"></i>
+          <ul class="submenu">
+            <li><a href="#">내 정보</a></li>
+            <li><a href="#">활동 내역</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="menu-footer">
+        <div class="logo">
+          <a href="index.html">BOARD<span>LIFE</span></a>
+        </div>
+          <div class="caption">
+            <em>Copyright &copy;boardlife.co.kr All rights  reserved.</em>
+            <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은  <br />보드라이프 및 보드라이프 이용자에게 있습니다.  </p>
+          </div>
+        </div>
       </div>
     </nav>
+
+    <div class="dimmed-overlay"></div>
+    <div class="dimmed-overlay"></div>
   </header>
 
+  <main>
+
+    <div class="title-wrap">
+      <i class="xi-angle-left"></i>
+      <div class="title">
+        <h1>나의 보드판</h1>
+      </div>
+    </div>
+
+    <section class="my">
+      <div class="profile card">
+        <img src="assets/images/mypage/profile.png" alt="프로필이미지">
+        <div class="profile-right">
+          <div class="profile-name">
+            <h3>별밤</h3>
+            <div class="lv">
+              <i class="fa-solid fa-dice-one"></i>
+              <p class="small">Lv.1</p>
+            </div>
+          </div>
+          <p class="middle">
+            혼자보단 함께, 추상 전략 좋아함.<br>아직은 초보지만 열심히 즐기는 중!
+          </p>
+        </div>
+        <a href="#none"><i class="xi-pen"></i></a>
+      </div>
+    </section>
+
+    <section class="my">
+      <div class="game card">
+        <div class="title">
+          <div class="title-l">
+            <h4>찜한 게임</h4>
+          </div>
+          <a href="#none">
+            <p class="small">더보기</p>
+            <i class="xi-angle-right"></i>
+          </a>
+        </div>
+        <div class="game-img">
+          <img src="assets/images/mypage/gm1.png" alt="스카이팀">
+          <img src="assets/images/mypage/gm2.png" alt="점박이">
+          <img src="assets/images/mypage/gm3.png" alt="랫잭">
+        </div>
+      </div>
+    </section>
+
+    <section class="my">
+      <div class="game card">
+        <div class="title">
+          <div class="title-l">
+            <h4>콜렉션</h4>
+          </div>
+          <a href="#none">
+            <p class="small">더보기</p>
+            <i class="xi-angle-right"></i>
+          </a>
+        </div>
+        <div class="game-img">
+          <img src="assets/images/mypage/gm4.png" alt="블랙스토리즈">
+          <img src="assets/images/mypage/gm5.png" alt="패치워크">
+          <img src="assets/images/mypage/gm6.png" alt="아줄">
+        </div>
+      </div>
+    </section>
+
+    <section class="my">
+      <div class="game card">
+        <div class="title">
+          <div class="title-l">
+            <h4>나의 거래</h4>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#none">
+              <p>판매 내역</p>
+              <i class="xi-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#none">
+              <p>구매 내역</p>
+              <i class="xi-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#none">
+              <p>거래 리뷰</p>
+              <i class="xi-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="my">
+      <div class="bookmark">
+        <div class="title">
+          <div class="title-l">
+            <h4>즐겨찾기</h4>
+          </div>
+          <a href="#none">
+            <p class="small">더보기</p>
+            <i class="xi-angle-right"></i>
+          </a>
+        </div>
+        <div class="board-card">
+          <div class="card-profile">
+            <div class="name">
+              <i class="xi-profile"></i>
+              <p class="middle">리클러스</p>
+            </div>
+            <div class="mini-tab">
+              후기
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>최근 즐긴 게임들 간단한 후기</h4>
+            <img src="assets/images/board/bd-img1.png"  alt="게임이미지">
+            <p class="small">
+              아 요거는 한 판 간신히 해봤네요.<br>
+              담주부터 슬슬 해보려고요. 후기는 다음으로   미룰까 했는데, 챕터마다 클리어 조건을 주고  아이템도 하나 주는 그런건데, 살짝 맛만 봤지만  솔플러분들 간보지 마시고 그냥 츄라이츄라이   하시라는 말씀 드리고 가도 될 것 같아용.
+            </p>
+          </div>
+          <div class="card-bottom">
+            <p>조회 541</p>
+            <div class="card-bt-right">
+              <div class="heart">
+                <i class="xi-heart-o"></i>
+                <p>18</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p>23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my">
+      <div class="my-b">
+        <div class="title">
+          <div class="title-l">
+            <h4>내 게시글</h4>
+          </div>
+          <a href="#none">
+            <p class="small">더보기</p>
+            <i class="xi-angle-right"></i>
+          </a>
+        </div>
+        <div class="board-card">
+          <div class="card-profile">
+            <div class="name">
+              <img src="assets/images/board/profile-img2.png" alt="프로필이미지">
+              <p class="middle">별밤</p>
+            </div>
+            <div class="mini-tab">
+              후기
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>우주적 규모의 게임, SETI 첫인상 (Feat.  콘택트 1997)</h4>
+            <img src="assets/images/board/bd-img4.png"  alt="게임이미지">
+            <p class="small">
+              [세티의 박스 아트웍은 VLA을 모델로 하고 있다.   옥에 티라면 전파에 방해가 될만한 주위에 거대  구조물이 있으면 안 되는데, 가시거리에  발사대가 있으며, 로켓을 발사한다는 것이...   (웃고자 한 이야기지지만) 사실 상징성을   생각하면 이보다 좋은 아트웍은 없다.]
+              조디 포스터가 아레시보 전파망원경 앞에서  하늘을 올려다보던 그 순간을 기억하는가? 칼   세이건의 소설을 바탕으로 한 영화 '콘택트'에서   엘리 애로웨이 박사가 느꼈던 그 무한한   호기심과 외로움, 그리고 희미한 희망.
+            </p>
+          </div>
+          <div class="card-bottom">
+            <p>조회 1,149</p>
+            <div class="card-bt-right">
+              <div class="heart">
+                <i class="xi-heart-o"></i>
+                <p>41</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p>29</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 
 
 
+
+
+  <footer>
+    <nav id="navigation">
+      <ul class="nav-bar">
+        <li><i class="xi-home"></i></li>
+        <li><i class="xi-comment"></i></li>
+        <li><i class="xi-trophy"></i></li>
+        <li><i class="xi-user"></i></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/assets/js/header.js"></script>
 
 </body>
 </html>

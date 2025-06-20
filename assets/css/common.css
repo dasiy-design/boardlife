@@ -246,8 +246,8 @@ p.small{
 }
 
 /* 토글 탭버튼 */
-.toggle.tab-wrap{
-  overflow: visible;
+.toggle.tab-wrap {
+  display: block; /* 처음엔 보이게 */
 }
 .custom-dropdown {
   position: relative;

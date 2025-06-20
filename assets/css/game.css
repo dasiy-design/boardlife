@@ -43,10 +43,11 @@
   color: var(--color-gray-6);
   line-height: 24px;
   word-break: keep-all;
+  margin-top: 5px;
 }
 #rank .rank-top p.no-desc{
   color: var(--color-gray-c);
-  font-size: 16px;
+  font-weight: 300;
 }
 #rank .rank-bottom{
   display: flex;
@@ -69,19 +70,4 @@
 #rank .rank-desc i{
   color: var(--color-secondary);
   margin-right: 5px;
-}
-
-.tabSwiper {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 40px;
-  padding-left: 25px;
-}
-
-.tabSwiper .swiper-slide {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
 }

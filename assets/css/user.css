@@ -1,6 +1,7 @@
 /* user 공통 */
 input.user-form{
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   padding: 20px 30px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -97,7 +98,8 @@ input.user-form:focus{
   margin-bottom: 20px;
 }
 #login .go-join a{
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* join_________________________________________ */

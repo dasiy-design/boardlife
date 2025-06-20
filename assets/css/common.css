@@ -3,10 +3,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
-@font-face{
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-}
+
 /* color */
 :root{
   --color-primary: #4A90E2;
@@ -34,7 +31,7 @@ html{
 }
 
 body{
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard";
   width: 100%;
   max-width: 430px;
   background-color: white;
@@ -62,24 +59,21 @@ a{
 
 /* title text */
 h1{
-  font-family: 'Pretendard-Regular';
-  font-weight: bold;
-  /* font-style: normal; */
+  font-weight: 600;
   font-size: 32px;
 }
 h2{
-  font-family: 'Pretendard-Regular';
   font-weight: 400;
   font-size: 22px;
 }
 
 /* body text */
 h3{
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
 }
 h4{
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 p{
@@ -214,12 +208,35 @@ p.small{
   align-items: center;
   border-radius: 8px;
 }
+.bottom-btn h4{
+  font-weight: 500;
+}
 
 /* 아이콘 모음 */
 .icons{
   font-size: 36px;
   color: #222222;
 }
+
+/* 탑버튼 */
+main{
+  position: relative; /* top 버튼의 기준 */
+}
+.top{
+  position: fixed;
+  right: calc(50% - 215px + 25px);
+  bottom: 100px;
+  z-index: 50;
+}
+.top i{
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+}
+
+/* 글쓰기버튼 */
 .write-btn{
   width: 65px;
   height: 65px;

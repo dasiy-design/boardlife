@@ -98,7 +98,9 @@
     </div>
 
     <div class="board title-wrap">
-      <i class="xi-angle-left"></i>
+      <a href="index.html">
+        <i class="xi-angle-left"></i>
+      </a>
       <div class="title">
         <h1>게시판</h1>
       </div>
@@ -108,7 +110,7 @@
     <div class="swiper tabSwiper">
       <div class="swiper-wrapper">
         <div class="open swiper-slide">
-          <a href="#none" class="tab-button">
+          <a href="#none" class="tab-button active">
             전체
             <i class="xi-angle-down"></i>
           </a>
@@ -128,15 +130,25 @@
     <!-- 버튼 클릭시 나올 내용 -->
     <div class="m-container">
       <div class="modal">
-        <button class="close">
-          <i class="xi-close"></i>
-        </button>
-        <div class="m-content">
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur   adipisicing elit. Reiciendis,
-            excepturi?
-          </p>
+        <div class="mtop">
+          <h3>카테고리</h3>
+          <a href="#none" class="close">
+            <i class="xi-close"></i>
+          </a>
+        </div>
+        <div class="content-wrap">
+          <div class="m-content">
+            <div class="tab-list">
+              <a href="#none" class="tab-button active">전체</a>
+              <a href="#none" class="tab-button">후기</a>
+              <a href="#none" class="tab-button">문의</a>
+              <a href="#none" class="tab-button">자료</a>
+              <a href="#none" class="tab-button">꿀팁</a>
+              <a href="#none" class="tab-button">창작</a>
+              <a href="#none" class="tab-button">해외</a>
+              <a href="#none" class="tab-button">행사</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -331,6 +343,7 @@
 
 
   <script src="/assets/js/header.js"></script>
+
   <!-- 스와이퍼(헤더링크도 추가) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -346,20 +359,42 @@
     const container = document.querySelector('.m-container');
     const closeButton = document.querySelector('.close');
     const overlay = document.querySelector('.modal-overlay');
-      
+    const tabButtons = document.querySelectorAll('.m-content .tab-button');
+    const mainTabText = document.querySelector('.open .tab-button');
+
+    // 모달 열기
     openButton.addEventListener('click', () => {
       container.style.display = 'flex';
       overlay.style.display = 'block';
     });
-    
-    closeButton.addEventListener('click', () => {
+
+    // 모달 닫기
+    const closeModal = () => {
       container.style.display = 'none';
       overlay.style.display = 'none';
-    });
+    };
 
-    overlay.addEventListener('click', () => {
-    container.style.display = 'none';
-    overlay.style.display = 'none';
+    closeButton.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
+
+  // 탭 버튼 클릭 시
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // 1. 모든 버튼에서 active 제거
+        tabButtons.forEach(btn => btn.classList.remove  ('active'));
+
+      // 2. 클릭한 버튼에 active 추가
+      button.classList.add('active');
+
+      // 3. 상단 '전체' 버튼 텍스트 변경
+      mainTabText.innerHTML = `
+        ${button.textContent}
+        <i class="xi-angle-down"></i>
+        `;
+
+        // 4. 모달 닫기
+        closeModal();
+      });
     });
   </script>
 

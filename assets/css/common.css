@@ -329,3 +329,10 @@ main{
   display: flex; 
   column-gap: 5px;
 }
+
+
+/* 찜하트 */
+.heart-toggle i {
+  font-size: 30px;
+  color: crimson;
+}

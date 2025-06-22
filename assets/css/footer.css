@@ -1,5 +1,4 @@
-
-nav#navigation{
+#navigation {
   /* border: 1px solid #000; */
   width: 430px;
   height: 96px;
@@ -8,8 +7,9 @@ nav#navigation{
   justify-content: center;
   align-items: center;
   box-shadow: 4px 4px 8px rgba(179, 179, 179, 0.25);
+  border-radius: 8px 8px 0 0;
 }
-#navigation ul.nav-bar{
+#navigation ul.nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,6 @@ nav#navigation{
   font-size: 36px;
   color: var(--color-gray-c);
 }
-#navigation ul.nav-bar.active{
+#navigation ul.nav-bar.active {
   color: var(--color-secondary);
 }

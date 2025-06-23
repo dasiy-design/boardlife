@@ -1,4 +1,4 @@
-#shop-detail {
+#shop-detail{
   padding: 20px;
 }
 #shop-detail .container-wrap {
@@ -15,7 +15,7 @@
   transition: transform 0.2s ease-in-out;
 }
 #shop-detail .card.shop-item:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
 }
 
 #shop-detail .shop-content {
@@ -25,7 +25,6 @@
   display: flex;
   align-items: flex-start;
   /* gap: 12px; */
-  /* width: 370px; */
   margin-top: 20px;
 }
 #shop-detail .shop-title img {

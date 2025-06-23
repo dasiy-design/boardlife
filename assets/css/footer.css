@@ -11,11 +11,6 @@ nav#navigation {
   position: fixed;
   bottom: 0;
   z-index: 10;
-<<<<<<< HEAD
-  background: #fff;
-=======
-  background-color: #fff;
->>>>>>> subin
 }
 
 nav#navigation ul.nav-bar{

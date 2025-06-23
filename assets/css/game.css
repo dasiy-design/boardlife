@@ -1,4 +1,7 @@
 /* rank */
+#rank .container-wrap{
+  padding-bottom: 96px;
+}
 #rank .rank-item{
   width: 100%;
   max-width: 380px;
@@ -75,6 +78,9 @@
 }
 
 /* review */
+#review .container-wrap{
+  padding-bottom: 116px;
+}
 #review .review-item{
   width: 100%;
   max-width: 380px;

@@ -74,7 +74,7 @@
   padding-bottom: 60px;
 }
 #best-ranking .title-wrap {
-  padding: 30px 5px;
+  padding: 30px;
   margin: 40px auto;
 }
 #best-ranking .title-wrap p {
@@ -150,8 +150,8 @@
   margin-top: 60px;
   object-fit: cover;
 }
-#best-ranking .best-wrap ul.best-rank h1{
-  margin: 40px;
+#best-ranking .best-wrap ul.best-rank h2{
+  margin-top: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

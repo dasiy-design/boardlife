@@ -22,6 +22,11 @@
 #shop-detail .shop-content {
   margin: 12px 0;
 }
+#shop-detail .shop-content .mini-tab{
+  color: white;
+  background-color: var(--color-secondary);
+  border: var(--color-secondary);
+}
 #shop-detail .shop-content .shop-title {
   display: flex;
   align-items: flex-start;

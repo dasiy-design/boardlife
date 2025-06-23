@@ -142,7 +142,7 @@ main{
 }
 .group-detail .bottom-btn{
   position: fixed;
-  bottom: 100px;
+  bottom: 110px;
   z-index: 50;
 }
 

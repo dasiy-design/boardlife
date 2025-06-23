@@ -226,7 +226,11 @@ main {
 .top {
   position: fixed;
   right: calc(50% - 215px + 25px);
+<<<<<<< HEAD
   bottom: 120px;
+=======
+  bottom: 130px;
+>>>>>>> subin
   z-index: 50;
 }
 .top i {

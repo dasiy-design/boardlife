@@ -21,10 +21,9 @@
 #shop-detail .shop-content {
   margin: 12px 0;
 }
-#shop-detail .shop-title {
+#shop-detail .shop-content .shop-title {
   display: flex;
   align-items: flex-start;
-  /* gap: 12px; */
   margin-top: 20px;
 }
 #shop-detail .shop-title img {
@@ -38,19 +37,18 @@
   flex: 1;
   padding: 0 20px 0 20px;
 }
-#shop-detail .shop-content.shop-desc h4 {
-  /* margin-bottom: 6px; */
+#shop-detail .shop-content .shop-desc h4 {
   color: var(--color-black);
-  /* margin: 20px auto; */
   text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 180px;
 }
 #shop-detail .shop-desc .middle {
-  /* line-height: 1.4; */
-  margin-bottom: 10px;
+  margin: 12px auto;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 #shop-detail .shop-desc span {
   color: var(--color-secondary);

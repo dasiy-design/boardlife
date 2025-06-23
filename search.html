@@ -105,7 +105,7 @@
       </div>
 
       <div class="container-fluid">
-        <div class="swiper tabSwiper">
+        <div class="swiper tabSwiper search-tab">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#none" class="tab-button active">카페 
@@ -132,8 +132,6 @@
                 <i class="xi-close"></i>
               </a>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -170,7 +168,7 @@
               <span>4</span>
               <p>보드게임 카페</p>
             </div>
-            <i class="xi-caret-down-min"></i>
+            <i class="rank-keep">-</i>  
           </div>
           <div class="search-item">
             <div>
@@ -184,7 +182,7 @@
               <span>6</span>
               <p>가족</p>
             </div>
-            <i class="xi-caret-up-min"></i>
+            <i class="rank-keep">-</i>
           </div>
           <div class="search-item">
             <div>
@@ -205,7 +203,7 @@
               <span>9</span>
               <p>협력</p>
             </div>
-            <i class="xi-caret-up-min"></i>
+            <i class="rank-keep">-</i>
           </div>
           <div class="search-item">
             <div>
@@ -216,16 +214,15 @@
           </div>
 
         </div>
-
-
       </div>
 
     </section>
   </main>
 
   <script src="/assets/js/header.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/assets/js/search.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".tabSwiper", {
       slidesPerView: 'auto',

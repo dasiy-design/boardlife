@@ -226,7 +226,7 @@ main {
 .top {
   position: fixed;
   right: calc(50% - 215px + 25px);
-  bottom: 100px;
+  bottom: 130px;
   z-index: 50;
 }
 .top i {

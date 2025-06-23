@@ -39,12 +39,7 @@ input.user-form:focus{
   background-image: url('../images/common/checked.png'); /*on 이미지*/
 }
 
-/* login_________________________________________ */
-
-#login{
-  height: 100vh;
-}
-
+/* login_________________________________________ */  
 #login .title-wrap .title h1{
   margin-bottom: 0;
 }
@@ -93,6 +88,7 @@ input.user-form:focus{
 
 #login .go-join{
   text-align: center;
+  padding-bottom: 200px;
 }
 #login .go-join p{
   color: var(--color-gray-6);
@@ -125,4 +121,9 @@ input.user-form:focus{
 
 #join .join-bottom .checkbox p{
   margin-left: 10px;
+}
+
+#join .join-btn{
+  width: 100%;
+  padding-bottom: 96px;
 }

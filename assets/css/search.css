@@ -62,7 +62,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+#search .search-item:last-child{
+  padding-bottom: 96px;
 }
 #search .search-item>div{
   display: flex;

@@ -1,6 +1,6 @@
 const tabSwiper = document.querySelector('.search-tab');
-const tabBtn = tabSwiper.querySelector('.tab-button');
-const tabBtnClose = tabBtn.querySelector('.xi-close');
+const tabBtn = tabSwiper.querySelectorAll('.tab-button');
+// const tabBtnClose = tabBtn.querySelector('.xi-close');
 
 
 // tabBtnClose.addEventListener('click', function(){
@@ -17,4 +17,10 @@ const delItem = (event) => {
   target.remove();    
 };
 
-tabBtnClose.addEventListener('click', delItem);
+// tabBtnClose.addEventListener('click', delItem);
+
+
+
+tabBtn.forEach(button => {
+  button.addEventListener('click', delItem);
+});

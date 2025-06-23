@@ -11,8 +11,6 @@
 </head>
 
 <body>
-
-
   <main>
     <header id="main-header">
       <div class="header-conatiner">
@@ -105,6 +103,7 @@
           <div class="swiper-slide"><img src="/assets/images/main/banner8.png" alt="신작할인 광고배너">
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -549,7 +548,11 @@
     var swiper = new Swiper("#banner .mySwiper", {
       autoplay:{
         delete: 1500,
-      }
+      },
+      pagination:{
+        el:"#banner .swiper-pagination",
+        clickable: true,    //인디케이터 클릭 가능하게 설정
+      },
     });
   </script>
 

@@ -20,6 +20,19 @@
   height: 100%;
   object-fit: cover;
 }
+#banner .swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  background-color: var(--color-gray-c);
+  opacity: 1;
+  margin: 0 4px;
+}
+#banner .swiper-pagination-bullet-active{
+  background: var(--color-secondary);
+  transform: rotate(45deg);
+}
+
 
 /* main icon */
 #home-icons {

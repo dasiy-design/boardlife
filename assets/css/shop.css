@@ -1,4 +1,6 @@
-
+#shop .container-wrap{
+  padding-bottom: 120px;
+}
 #shop .shop-item {
   width: 100%;
   max-width: 380px;

@@ -27,6 +27,7 @@
   background-color: var(--color-gray-c);
   opacity: 1;
   margin: 0 4px;
+  transition: 0.3s;
 }
 #banner .swiper-pagination-bullet-active{
   background: var(--color-secondary);
@@ -88,7 +89,7 @@
   width: 500px;
   margin: 0 auto;
 }
-#best-ranking .swiper .best-wrap ul.best-rank {
+#best-ranking .swiper .best-wrap ul.best-rank{
   border: 1px solid #000;
   display: flex;
   align-items: center;
@@ -117,6 +118,7 @@
   position: relative;
   z-index: 1;
 }
+
 #best-ranking .best-wrap ul.best-rank li.active {
   transform: scale(1);
   opacity: 1;

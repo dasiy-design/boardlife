@@ -42,7 +42,7 @@
   object-fit: cover;
   flex-shrink: 0;
 }
-#shop .shop-desc {
+#shop .shop-desc{
   flex: 1;
   padding-right: 30px;
 }

@@ -28,6 +28,7 @@ html {
   padding: 0;
   color: var(--color-black);
   background-color: var(--color-gray-light);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -332,4 +333,11 @@ main {
 .board-card .card-bottom .comment {
   display: flex;
   column-gap: 5px;
+}
+
+
+/* 찜하트 */
+.heart-toggle i {
+  font-size: 30px;
+  color: crimson;
 }

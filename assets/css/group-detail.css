@@ -73,7 +73,9 @@
   line-height: 24px;
 }
 
-
+.group-detail.review{
+  margin-bottom: 80px;
+}
 .group-detail.day .title,
 .group-detail.review .title{
   display: flex;
@@ -133,3 +135,13 @@
   color: var(--color-secondary);
 }
 
+
+/* 가입하기 버튼 */
+main{
+  position: relative; /* 버튼의 기준 */
+}
+.group-detail .bottom-btn{
+  position: fixed;
+  bottom: 100px;
+  z-index: 50;
+}

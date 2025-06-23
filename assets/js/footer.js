@@ -1,31 +1,30 @@
 // 네비게이션 아이템들 가져오기
 const navLinks = document.querySelectorAll(".nav-bar a");
 
-// secondary 색상 정의
-const secondaryColor = "#2196F3"; // 원하는 secondary 색상으로 변경
-const defaultColor = "#666";
+console.log("발견된 링크 수:", navLinks.length);
+navLinks.forEach((link, index) => {
+  console.log(`링크 ${index}:`, link.href, "active 클래스:", link.classList.contains('active'));
+});
 
 // 각 링크에 클릭 이벤트 추가
 navLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
+    console.log("클릭된 링크:", this.href);
+    
     // 실제 페이지 이동을 방지 (데모 목적)
     if (this.getAttribute("href") === "#") {
       e.preventDefault();
     }
 
-    // 모든 링크에서 active 클래스 제거 및 기본 색상으로 변경
+    // 모든 링크에서 active 클래스 제거
     navLinks.forEach((l) => {
       l.classList.remove("active");
-      l.style.color = defaultColor;
-      const icon = l.querySelector("i");
-      if (icon) icon.style.color = defaultColor;
+      console.log("active 제거:", l.href);
     });
 
-    // 클릭된 링크에 active 클래스 추가 및 secondary 색상 적용
+    // 클릭된 링크에 active 클래스 추가
     this.classList.add("active");
-    this.style.color = secondaryColor;
-    const activeIcon = this.querySelector("i");
-    if (activeIcon) activeIcon.style.color = secondaryColor;
+    console.log("active 추가:", this.href);
 
     // 클릭 효과 애니메이션
     this.style.transform = "scale(0.9)";
@@ -38,38 +37,27 @@ navLinks.forEach((link) => {
 // 페이지 로드 시 현재 페이지에 해당하는 링크 활성화
 window.addEventListener("load", function () {
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  console.log("현재 페이지:", currentPage);
   
-  // 먼저 모든 링크를 기본 색상으로 설정
+  // 먼저 모든 active 클래스 제거
   navLinks.forEach((link) => {
-    link.style.color = defaultColor;
-    const icon = link.querySelector("i");
-    if (icon) icon.style.color = defaultColor;
+    link.classList.remove("active");
   });
   
-  // 현재 페이지에 해당하는 링크 활성화
   navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
+    const linkHref = link.getAttribute("href");
+    console.log("링크 확인:", linkHref, "현재 페이지와 같은가?", linkHref === currentPage);
+    
+    if (linkHref === currentPage) {
       link.classList.add("active");
-      link.style.color = secondaryColor;
-      const activeIcon = link.querySelector("i");
-      if (activeIcon) activeIcon.style.color = secondaryColor;
+      console.log("현재 페이지 링크에 active 추가:", linkHref);
     }
   });
 });
 
-// 터치 디바이스 지원
-navLinks.forEach((link) => {
-  link.addEventListener("touchstart", function () {
-    if (!this.classList.contains("active")) {
-      this.style.backgroundColor = "#f0f0f0";
-    }
+// 현재 상태 확인용 함수
+function checkActiveLinks() {
+  console.log("=== 현재 active 링크 상태 ===");
+  navLinks.forEach((link, index) => {
+    console.log(`링크 ${index}: ${link.href} - active: ${link.classList.contains('active')}`);
   });
-
-  link.addEventListener("touchend", function () {
-    setTimeout(() => {
-      if (!this.classList.contains("active")) {
-        this.style.backgroundColor = "";
-      }
-    }, 200);
-  });
-});

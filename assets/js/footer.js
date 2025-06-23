@@ -54,10 +54,3 @@ window.addEventListener("load", function () {
     }
   });
 });
-
-// 현재 상태 확인용 함수
-function checkActiveLinks() {
-  console.log("=== 현재 active 링크 상태 ===");
-  navLinks.forEach((link, index) => {
-    console.log(`링크 ${index}: ${link.href} - active: ${link.classList.contains('active')}`);
-  });

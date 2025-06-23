@@ -72,3 +72,7 @@
 .tab-list .tab-button {
   margin-right: 0 !important;
 }
+
+.board .board-card.last{
+  margin-bottom: 140px;
+}

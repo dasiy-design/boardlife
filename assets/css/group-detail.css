@@ -145,3 +145,8 @@ main{
   bottom: 100px;
   z-index: 50;
 }
+
+
+.group-detail.review{
+  margin-bottom: 180px;
+}

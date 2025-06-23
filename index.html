@@ -109,7 +109,7 @@
     </section>
 
     <!-- category -->
-    <section id="home-icons">
+    <!-- <section id="home-icons">
       <div class="icons-item">
         <div class="icons">
           <div class="basic">
@@ -142,7 +142,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- best rank(미완성 / 스와이프 효과만 하면 됨) -->
@@ -249,7 +249,7 @@
               </div>
               <div class="card-bottom">
                 <p>조회 1,180</p>
-                <div class="bottom-right">
+                <div class="card-bt-right">
                   <div class="heart">
                     <i class="xi-heart-o"></i>
                     <p>26</p>
@@ -388,6 +388,21 @@
 
     </section>
 
+    <section id="admin">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/images/main/ad1.jpg" alt="신작할인광고">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/ad2.jpg" alt="더 콜랙터 광고">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/ad3.jpg" alt="뤄스 광고">
+          </div>
+          <div class="swiper-slide"><img src="/assets/images/main/ad4.jpg" alt="푸들택시 광고">
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="group">
       <div class="group-title">
         <h3>모임
@@ -529,6 +544,15 @@
         delete: 2000,
       },
       allowTouchMove: true,
+    });
+  </script>
+
+  <!-- admin banner -->
+  <script>
+    var swiper = new Swiper("#admin .mySwiper", {
+      autoplay:{
+        delete: 1500,
+      }
     });
   </script>
 </body>

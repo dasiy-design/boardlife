@@ -4,7 +4,7 @@
 #banner img {
   width: 430px;
   height: 430px;
-  border-radius: 120px;
+  /* border-radius: 120px; */
 }
 
 #banner.swiper-slide {
@@ -143,7 +143,7 @@
 
 /* best-post all */
 #best-post {
-  height: 586px;
+  height: 650px;
   background-color: #f6f6f6;
   color: var(--color-black);
   overflow: hidden;
@@ -165,10 +165,13 @@
 }
 
 /* best-post */
+#best-post .post-text{
+  margin-top: 50px;
+}
 #best-post .swiper {
   width: 100%;
   height: 500px;
-  /* padding: 0 25px; */
+  /* padding: 25px; */
 }
 #best-post .swiper-wrapper {
   display: flex;
@@ -177,12 +180,14 @@
 #best-post .board-card {
   width: 380px;
   height: 420px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   /* flex-shrink: 0; */
   padding: 20px;
   /* border: 1px solid red; */
-  position: relative;
+  /* position: relative; */
   margin-bottom: 10px;
 }
 #best-post .swiper-slide .card-profile .name img {
@@ -197,30 +202,51 @@
   justify-content: flex-start;
   position: absolute;
 }
-#best-post .swiper-slide .card-content img {
+
+#best-post .swiper-slide .card-content img{
   object-fit: cover;
-  border: 1px solid blue;
-  width: 100%;
+  width: 94%;
 }
 #best-post .swiper-slide .card-content {
-  overflow-x: hidden;
-  border: 1px solid purple;
+  overflow: hidden;
 }
-#best-post .swiper-slide .card-bottom {
-  border: 1px solid #000;
-}
+#best-post .swiper-slide .card-content 
 #best-post .swiper-slide .card-bottom .bottom-right,
 #best-post .swiper-slide .card-bottom .card-bt-right {
-  display: flex;
+  /* display: flex; */
   gap: 15px;
 }
 
+/* ad banner */
+#admin{
+  padding: 20px 0;
+}
+#admin img {
+  width: 100%;
+  /* border-radius: 120px; */
+}
+
+#admin .swiper-slide {
+  text-align: center;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#admin .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* group section */
-#group {
+#group{
   width: 430px;
   height: 600px;
 }
-#group .group-title {
+#group .group-title{
   margin: 20px;
   padding: 10px 0;
 }
@@ -232,10 +258,10 @@
   align-items: center;
 }
 
-#group .group-wrap {
+#group .group-wrap{
   border: 1px solid #000;
 }
-#group .group-card {
+#group .group-card{
   width: 380px;
   height: 200px;
   justify-content: center;

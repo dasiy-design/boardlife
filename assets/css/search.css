@@ -43,6 +43,9 @@
 #search .tabSwiper{
   margin-top: 20px;
 }
+#search .tab-button{
+  transition: 0.3s;
+}
 #search .tabSwiper i{
   margin-left: 5px;
   transform: translateY(1px);

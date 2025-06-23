@@ -145,10 +145,10 @@
 /* group section */
 #group{
   width: 430px;
-  height: 1000px;
+  height: 940px;
 }
 #group .group-title{
-  margin: 20px;
+  margin: 30px;
   padding: 10px 0;
 }
 #group .group-title i {
@@ -276,6 +276,7 @@
   width: 100%;
   /* border-radius: 120px; */
 }
+
 
 #admin .swiper-slide {
   text-align: center;

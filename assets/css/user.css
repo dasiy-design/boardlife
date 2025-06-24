@@ -109,6 +109,34 @@ input.user-form:focus{
 #join .meeple-line img{
   height: 14px;
 }
+
+#join .user-cert{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#join .user-cert a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 50px;
+  right: 5px;
+  top: 6px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background-color: var(--color-gray-c);
+  transition: 0.35s;
+}
+
+#join .user-cert a:hover{
+  background-color: var(--color-primary);
+  transition: 0.2s;
+}
+
 #join .join-bottom{
   padding: 20px 0 40px;
   display: flex;

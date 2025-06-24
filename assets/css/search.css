@@ -1,9 +1,12 @@
+#search{
+  width: 430px;
+}
 #search .search-bar{
-    max-width: 380px;
-    width: 100%;
-    height: 50px;
-    position: relative;
-    display: flex;
+  max-width: 380px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
 }
 
 #search .search-bar input.search{

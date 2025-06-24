@@ -1,4 +1,8 @@
 /* rank */
+#rank .title-wrap{
+  margin-top: 220px;
+}
+
 #rank .container-wrap{
   padding-bottom: 96px;
 }
@@ -78,6 +82,10 @@
 }
 
 /* review */
+#review .title-wrap{
+  margin-top: 220px;
+}
+
 #review .container-wrap{
   padding-bottom: 116px;
 }

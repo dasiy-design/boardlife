@@ -92,5 +92,5 @@
 // })
 
 document.addEventListener, function(){
-    음 모르겠다
+    // 음 모르겠다
 }

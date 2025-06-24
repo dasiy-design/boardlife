@@ -185,17 +185,19 @@ header .top-bar{
   gap: 62px;
 }
 
-nav.main-menu ul.main-menu-list li a h4{
+
+.main-nav-menu .main-menu-list li a{
   font-weight: 300;
   padding: 12px 0;
+  font-size: 20px;
   position: relative;
   transition: color 0.3s ease;
   gap: 20px;
-  color: var(--color-grayC, #ccc);
-  font-weight: 300;
+  color: #ccc;
+  font-weight: normal;
 }
-.main-menu li a:hover{
-  color: var(--color-primary, #fb9225);
+.main-nav-menu li a:hover{
+  color: var(--color-secondary);
   font-weight: bold;
 }
 .main-menu li a:after{

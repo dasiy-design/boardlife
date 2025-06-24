@@ -1,9 +1,9 @@
-/* body{
+body{
   position: relative;
   max-width: 430px;
   overflow-x: hidden;
 }
-#main-header{
+/* #main-header{
   padding: 65px 25px 10px;
   width: 100%;
   max-width: 430px;
@@ -152,14 +152,13 @@ body.menu-open{overflow: hidden;}
 } */
 
 header{
-  max-width: 480px;
+  max-width: 430px;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #eee;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 50;
 }
 header .top-bar{

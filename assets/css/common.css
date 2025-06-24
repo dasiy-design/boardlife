@@ -33,10 +33,13 @@ html {
 
 body {
   font-family: "Pretendard";
-  width: 100%;
+  background-color: white;
+}
+.all{
   max-width: 430px;
   background-color: white;
 }
+
 
 li {
   list-style: none;
@@ -340,4 +343,84 @@ main {
 .heart-toggle i {
   font-size: 30px;
   color: crimson;
+}
+
+
+/* 왼쪽 푸터 */
+
+.left{
+  /* border: 1px solid #000; */
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+}
+.left::before{
+  content: '';
+  display: block; 
+  width: 100%; 
+  height: 100%;
+  background: url(/assets/images/common/mo.png) no-repeat center / contain;
+  position: absolute;
+  top: -220px;
+  left: -240px;
+  animation: ro-ani 3s linear infinite; 
+}
+.left::after{
+  content: '';
+  display: block; 
+  width: 100%; 
+  height: 100%;
+  background: url(/assets/images/common/dice.png) no-repeat center / contain;
+  position: absolute;
+  top: 270px;
+  right: -850px;
+  animation: dung-ani 3s linear infinite; 
+}
+.left-top{
+  display: flex;
+  flex-direction: column;
+}
+.left .left-top img{
+  margin-bottom: 15px;
+  width: 253px;
+}
+.left img:first-child{
+  width: 80%;
+}
+.left img:last-child{
+  margin-bottom: 40px;
+}
+.left .left-middle{
+  display: flex;
+  gap: 50px;
+}
+.left ul li{
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.left-bt{
+  margin-top: 20px;
+}
+.left .caption em{
+  color: var(--color-secondary);
+  font-style: normal;
+  font-size: 12px;
+}
+.left .caption p{
+  font-size: 12px;
+  color: var(--color-gray9);
+  margin-top: 10px;
+}
+
+@keyframes dung-ani{
+  0% {transform: translateY(0);}
+	50% {transform: translateY(-30px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes ro-ani{
+  0% {rotate: -20deg;}
+	50% {rotate: 0deg;}
+	100% {rotate: -20deg;}
 }

@@ -424,3 +424,7 @@ main {
 	50% {rotate: 0deg;}
 	100% {rotate: -20deg;}
 }
+
+@media (max-width: 1600px) {
+  .left{display: none;}
+}

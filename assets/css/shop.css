@@ -1,4 +1,6 @@
-
+.shopSwiper .swiper-wrapper{
+  padding-left: 25px;
+}
 #shop .container-wrap{
   padding-bottom: 150px;
 }

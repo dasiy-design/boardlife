@@ -132,6 +132,8 @@ input.user-form:focus{
 #join-complete{
   text-align: center; 
   padding: 200px 0;
+  width: 430px;
+  /* max-width: 430px; */
 }
 #join-complete .join-meeple{
   display: flex;
@@ -140,7 +142,8 @@ input.user-form:focus{
   margin: 40px 0;
 }
 #join-complete .join-meeple img{
-  width: 130px;
+  max-width: 130px;
+  height: 130px;
 }
 #join-complete .join-meeple img:nth-child(1){
   animation: meeple-left-ani 1.5s infinite ease-in-out;

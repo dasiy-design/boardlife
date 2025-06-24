@@ -162,7 +162,7 @@
 /* group section */
 #group{
   width: 430px;
-  height: 940px;
+  height: 1000px;
 }
 #group .group-title{
   margin: 30px;
@@ -194,13 +194,9 @@
 }
 
 /* ad banner */
-#admin{
-  padding: 20px 0;
-}
 
 #admin .swiper-slide {
   text-align: center;
-  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

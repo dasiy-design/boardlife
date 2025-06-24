@@ -29,7 +29,7 @@ html {
   color: var(--color-black);
   background-color: var(--color-gray-light);
   scroll-behavior: smooth;
-  background-color: #F6FAFF;
+  background-color: #EAF4FF;
 }
 
 body{
@@ -363,8 +363,8 @@ main {
   height: 100%;
   background: url(/assets/images/common/mo.png) no-repeat center / contain;
   position: absolute;
-  top: -220px;
-  left: -240px;
+  top: -320px;
+  left: -300px;
   animation: ro-ani 3s linear infinite; 
 }
 .left::after{
@@ -375,7 +375,7 @@ main {
   background: url(/assets/images/common/dice.png) no-repeat center / contain;
   position: absolute;
   top: 270px;
-  right: -850px;
+  right: -1250px;
   animation: dung-ani 3s linear infinite; 
 }
 

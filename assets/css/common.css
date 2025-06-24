@@ -29,9 +29,10 @@ html {
   color: var(--color-black);
   background-color: var(--color-gray-light);
   scroll-behavior: smooth;
+  background-color: #F6FAFF;
 }
 
-body {
+body{
   font-family: "Pretendard";
   background-color: white;
 }
@@ -377,9 +378,11 @@ main {
   right: -850px;
   animation: dung-ani 3s linear infinite; 
 }
+
 .left-top{
   display: flex;
   flex-direction: column;
+  padding-bottom: 120px;
 }
 .left .left-top img{
   margin-bottom: 15px;

@@ -182,19 +182,21 @@ header .top-bar{
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 62px;
 }
 
-.main-menu li a h2{
-  color: #333;
+nav.main-menu ul.main-menu-list li a h4{
   font-weight: 300;
-  padding: 5px 0;
+  padding: 12px 0;
   position: relative;
   transition: color 0.3s ease;
+  gap: 20px;
+  color: var(--color-grayC, #ccc);
+  font-weight: 300;
 }
 .main-menu li a:hover{
-  color: var(--color-primary);
-  /* font-weight: bold; */
+  color: var(--color-primary, #fb9225);
+  font-weight: bold;
 }
 .main-menu li a:after{
   content: '';

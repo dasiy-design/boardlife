@@ -363,8 +363,8 @@ main {
   height: 100%;
   background: url(/assets/images/common/mo.png) no-repeat center / contain;
   position: absolute;
-  top: -320px;
-  left: -300px;
+  top: -300px;
+  left: -260px;
   animation: ro-ani 3s linear infinite; 
 }
 .left::after{
@@ -375,7 +375,7 @@ main {
   background: url(/assets/images/common/dice.png) no-repeat center / contain;
   position: absolute;
   top: 270px;
-  right: -1250px;
+  right: -980px;
   animation: dung-ani 3s linear infinite; 
 }
 

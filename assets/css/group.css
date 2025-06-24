@@ -2,6 +2,10 @@
   padding: 0 25px;
 }
 
+.group.title-wrap{
+  margin-top: 220px;
+}
+
 .group.toggle{
   margin-bottom: 40px;
 }
@@ -54,6 +58,3 @@
   padding: 0 0 0 20px;
 }
 
-.group{
-  margin-bottom: 140px;
-}

@@ -156,7 +156,8 @@ header{
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #eee;
   position: fixed;
   top: 0;
   z-index: 50;
@@ -167,7 +168,7 @@ header .top-bar{
   align-items: center;
   max-width: 380px;
   margin: 0 auto;
-  padding: 65px 25px 10px;
+  padding: 65px 10px 10px;
 }
 
 .main-nav-menu{
@@ -185,8 +186,8 @@ header .top-bar{
   gap: 60px;
 }
 
-.main-menu li a h2{
-  color: #333;
+nav.main-nav-menu ul.main-menu-list li a h2{
+  color: var(--color-grayC);
   font-weight: 300;
   padding: 5px 0;
   position: relative;
@@ -206,9 +207,8 @@ header .top-bar{
   background-color: var(--color-grayC);
   transition: width 0.3s ease;
 }
-.main-menu li a:hover::after,
-.main-menu li a.active::after{
-  width: 100%;
+nav.main-menu .main-menu-list li a.active{
+  color: var(--color-scondary);
 }
 .top-bar .search-icon i{
   font-size: 25px;

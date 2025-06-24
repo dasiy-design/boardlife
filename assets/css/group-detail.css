@@ -2,6 +2,10 @@
   padding: 0 25px;
 }
 
+.group-detail.title-wrap{
+  margin-top: 220px;
+}
+
 .group-detail.title-wrap i{
   position: absolute;
   top:0px;

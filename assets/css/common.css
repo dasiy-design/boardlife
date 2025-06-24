@@ -382,7 +382,7 @@ main {
 .left-top{
   display: flex;
   flex-direction: column;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 .left .left-top img{
   margin-bottom: 15px;
@@ -403,7 +403,7 @@ main {
   margin-bottom: 7px;
 }
 .left-bt{
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .left .caption em{
   color: var(--color-secondary);

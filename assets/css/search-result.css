@@ -56,3 +56,9 @@
 .result .board-card.last{
   margin-bottom: 140px;
 }
+
+.result.swiper .tab-button:hover{
+  background-color: var(--color-primary);
+  color: white;
+  transition: 0.3s;
+}

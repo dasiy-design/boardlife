@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             li.classList.remove('active', 'prev-slide', 'next-slide');
 
             // 실제 원본 슬라이드의 인덱스를 계산하여 적용
-            // currentIndex는 복제본 포함한 전체 liElements 배열에서의 인덱스입니다.
+            // currentIndex는 복제본 포함한 전체 liElements 배열에서의 인덱스
             if (index === currentIndex) {
                 li.classList.add('active');
             } else if (index === currentIndex - 1) {

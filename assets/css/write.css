@@ -1,0 +1,66 @@
+#write .title-wrap{
+  margin-top: 220px;
+  width: 430px;
+}
+
+#write .toggle{
+  margin-bottom: 20px;
+}
+
+
+#write .toggle .custom-dropdown{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+#write .toggle .dropdown-menu{
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid var(--color-primary);
+  padding-left: 0px;
+}
+#write .toggle .dropdown-menu li{
+  padding: 3px 20px;
+}
+#write .toggle .dropdown-menu li:not(:last-child){
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+#write input{
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--color-gray-9);
+  outline: none;
+}
+#write input:focus{
+  border-color: var(--color-primary);
+}
+
+#write textarea{
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Pretendard', sans-serif;
+  padding: 15px 20px;
+  border: 2px solid var(--color-gray-9);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+}
+#write textarea:focus{
+  border-color: var(--color-primary);
+}
+
+/* #write .upload-image{
+  margin-bottom: 40px;
+} */
+
+#write .write-btn{
+  width: 100%;
+  margin-bottom: 136px;
+}

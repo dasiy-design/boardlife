@@ -1,7 +1,7 @@
 nav#navigation {
   width: 430px;
   height: 96px;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,11 +18,22 @@ nav#navigation ul.nav-bar{
   justify-content: center;
   align-items: center;
   gap: 62px;
-  font-size: 36px;
+  font-size: 30px;
+}
+nav#navigation ul.nav-bar li{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 nav#navigation ul.nav-bar li a{
   color: var(--color-gray-c);
   transition: color 0.3s ease;
+}
+nav#navigation ul.nav-bar li p.small{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 nav#navigation ul.nav-bar li a.active{
   color: var(--color-secondary);

@@ -87,9 +87,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin: 0px auto;
   width: 500px;
-  margin: 0 auto;
 }
 #best-ranking .swiper .best-wrap ul.best-rank{
   border: 1px solid #000;
@@ -100,8 +99,8 @@
   width: auto;
   transition: transform 0.5s ease-in-out;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -132,7 +131,7 @@
   opacity: 0.7; /* active보다는 투명하고 일반 li보다는 선명하게 */
   z-index: 5; /* active보다는 낮고 일반 li보다는 높게 */
 }
-#best-ranking .best-wrap ul.best-rank li h6 {
+#best-ranking .best-wrap ul.best-rank li h6{
   position: absolute;
   font-size: 100px;
   font-family: "Pretendard-Regular";
@@ -142,10 +141,7 @@
 }
 #best-ranking .best-wrap ul.best-rank img {
   width: 280px;
-  /* width: 100%; */
-  /* height: 100%; */
   height: 300px;
-  /* max-height: 280px; */
   border-radius: 5px;
   margin-top: 60px;
   object-fit: cover;

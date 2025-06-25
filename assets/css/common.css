@@ -233,8 +233,8 @@ main {
 }
 .top {
   position: fixed;
-  right: calc(50% - 215px + 25px);
-  bottom: 120px;
+  right: 5%;
+  bottom: 17%;
   z-index: 50;
 }
 .top i {

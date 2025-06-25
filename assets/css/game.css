@@ -123,6 +123,9 @@
   color: var(--color-secondary);
   margin-right: 5px;
 }
+#review .review-info .fa-solid{
+  margin-right: 7px;
+}
 #review .review-desc{
   width: 100%;
   background-color: var(--color-gray-light);

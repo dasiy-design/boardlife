@@ -1,4 +1,6 @@
-
+.subSwiper .swiper-wrapper{
+  padding-left: 25px;
+}
 #shop-detail .container-wrap {
   display: flex;
   flex-direction: column;

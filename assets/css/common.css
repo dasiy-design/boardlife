@@ -234,8 +234,8 @@ main {
   z-index: 50;
 }
 .top i {
-  font-size: 25px;
-  padding: 15px;
+  font-size: 28px;
+  padding: 18px;
   border-radius: 50%;
   background: var(--color-primary);
   color: white;

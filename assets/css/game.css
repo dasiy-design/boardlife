@@ -60,17 +60,19 @@
 #rank .rank-bottom{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
 }
 #rank .rank-bottom span{
   width: 2px;
   height: 15px;
   background: var(--color-primary);
-  margin: 0 20px;
+  margin: 0;
 }
 #rank .rank-desc{
   display: flex;
   justify-content: center;
+  width: 30%;
 }
 #rank .rank-desc:last-child{
   border-right: none;

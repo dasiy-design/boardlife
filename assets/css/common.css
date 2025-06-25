@@ -35,6 +35,8 @@ html {
 body{
   font-family: "Pretendard";
   background-color: white;
+  width: 100%;
+  max-width: 430px;
 }
 .all{
   max-width: 430px;

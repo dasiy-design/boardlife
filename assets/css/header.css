@@ -156,8 +156,7 @@ header{
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0px 0px 10px 5px rgba(179, 179, 179, 0.25);
+  box-shadow: 0px 0px 5px 1px rgba(179, 179, 179, 0.2);
   position: fixed;
   top: 0;
   z-index: 50;
@@ -174,27 +173,23 @@ header .top-bar{
 .main-nav-menu{
   background-color: #fff;
   max-width: 380px;
-  margin: 10px 20px 20px;
-  padding: 0 10px 0px;
+  margin: 10px 25px 20px;
   text-align: center;
 }
 .main-menu-list{
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-between;
 }
-
 
 .main-nav-menu .main-menu-list li a{
   font-weight: 300;
-  padding: 12px 0;
+  padding: 0 10px;
   position: relative;
   transition: color 0.3s ease;
-  gap: 20px;
   color: #ccc;
-  font-weight: normal;
+  font-size: 20px;
 }
 .main-nav-menu li a:hover{
   color: var(--color-secondary);

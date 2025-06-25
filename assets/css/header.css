@@ -187,15 +187,22 @@ header .top-bar{
   font-weight: 300;
   padding: 0 10px;
   position: relative;
-  transition: color 0.3s ease;
-  color: #ccc;
+  transition: 0.3s ease;
   font-size: 20px;
+  color: var(--color-gray-9);
 }
-.main-nav-menu li a:hover{
+
+.main-nav-menu .main-menu-list li a:hover{
   color: var(--color-secondary);
-  font-weight: bold;
+  font-weight: 600;
 }
-.main-menu li a:after{
+
+.main-nav-menu .main-menu-list li a.active{
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+/* .main-menu li a:after{
   content: '';
   position: absolute;
   left: 0;
@@ -204,7 +211,8 @@ header .top-bar{
   height: 3px;
   background-color: var(--color-grayC);
   transition: width 0.3s ease;
-}
+} */
+
 .main-menu li a:hover::after,
 .main-menu li a.active::after{
   width: 100%;

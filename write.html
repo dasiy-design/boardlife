@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보드라이프 - 글쓰기</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/common/favicon.png">
+</head>
+<body>
+  
+  <div class="left">
+    <div class="left-top">
+      <img src="assets/images/common/sogae1.svg" alt="브랜딩슬로건">
+      <img src="assets/images/common/sogae2.svg" alt="브랜딩슬로건">
+    </div>
+    <div class="left-middle">
+      <ul class="m1">
+        <li><a href="#none">커뮤니티 규칙</a></li>
+        <li><a href="#none">서비스 약관/정책</a></li>
+        <li><a href="#none">개인정보취급방침</a></li>
+      </ul>
+      <ul>
+        <li><a href="#none">청소년보호정책</a>
+        <li><a href="#none">공지사항</a></li>
+        <li><a href="#none">광고센터</a></li>
+      </ul>
+    </div>
+    <div class="left-bt">
+      <div class="logo">
+        <a href="index.html">BOARD<span>LIFE</span></a>
+      </div>
+      <div class="caption">
+        <em>Copyright &copy;boardlife.co.kr All rights reserved.</em>
+        <p>본 페이지는 개인 포트폴리오용으로 모든 저작권은<br />보드라이프 및 보드라이프 이용자에게 있습니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="all">
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <a href="main.html">BOARD<span>LIFE</span></a>
+        </div>
+        <div class="search-icon">
+          <a href="search.html"><i  class="xi-search"></i></a>
+        </div>
+      </div>
+      <nav class="main-nav-menu">
+        <ul class="main-menu-list">
+          <li><a href="rank.html">순위</a></li>
+          <li><a href="review.html">리뷰</a></li>
+          <li><a href="write.html">모임</a></li>
+          <li><a href="cafe.html">카페</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+
+      <section id="write">
+        <div class="title-wrap">
+          <a href="javascript:history.back();"><i class="xi-angle-left"></i></a>
+          <div class="title">
+            <h1>글쓰기</h1>
+          </div>
+        </div>
+
+        <div class="container-wrap">
+
+          <div class="toggle tab-wrap">
+            <div class="tab-items">
+              <div class="custom-dropdown tab-button active" id="Dropdown">
+                <span class="selected-text">카테고리를 선택하세요.</span>
+                <i class="xi-angle-down"></i>
+                <ul class="dropdown-menu">
+                  <li data-value="게시판">게시판</li>
+                  <li data-value="리뷰">리뷰</li>
+                  <li data-value="모임">모임</li>
+                  <li data-value="쇼핑">쇼핑</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="text" placeholder="제목을 입력하세요.">  
+          
+          <textarea id="user-comment" rows="10" cols="22" placeholder="내용을 입력하세요."></textarea>
+
+          <input type = "file" accept = "image/*" class="upload-image">
+
+
+          <div class="write-btn">
+            <a href="javascript:history.back();" class="bottom-btn">
+              <h4>작성 완료</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <nav id="navigation">
+        <ul class="nav-bar">
+          <li>
+            <a href="index.html"><i class="xi-home"></i></a>
+          </li>
+          <li>
+            <a href="board.html"><i class="xi-comment"></i></a>
+          </li>
+          <li>
+            <a href="shop.html"><i class="xi-market"></i></a>
+          </li>
+          <li>
+            <a href="mypage.html"><i class="xi-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/tab.js"></script>
+  <script>
+    let btn3 = document.querySelector('.write-btn .bottom-btn');
+    btn3.onclick = function(){
+  alert('작성이 완료되었습니다.');
+};
+  </script>
+
+</body>
+</html>

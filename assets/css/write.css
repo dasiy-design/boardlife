@@ -7,7 +7,6 @@
   margin-bottom: 20px;
 }
 
-
 #write .toggle .custom-dropdown{
   width: 100%;
   display: flex;
@@ -55,10 +54,6 @@
 #write textarea:focus{
   border-color: var(--color-primary);
 }
-
-/* #write .upload-image{
-  margin-bottom: 40px;
-} */
 
 #write .write-btn{
   width: 100%;

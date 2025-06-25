@@ -2,7 +2,6 @@
   margin-top: 220px;
 }
 
-
 #cafe .container-wrap{
   padding-bottom: 96px;
 }
@@ -40,9 +39,7 @@
 #cafe .cafe-desc p.small{
   color: var(--color-primary);
   margin-top: 5px;
-  /* font-size: 14px; */
 }
 #cafe .cafe-desc p{
   margin-top: 10px;
-  /* font-size: 16px; */
 }

@@ -63,9 +63,10 @@ input.user-form:focus{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  width: 100%;
 }
 #login .social-btns a{
-  width: 116px;
+  width: 32%;
   height: 65px;
   background-color: var(--color-gray-light);
   border-radius: 8px;
@@ -160,14 +161,15 @@ input.user-form:focus{
 #join-complete{
   text-align: center; 
   padding: 200px 0;
-  width: 430px;
-  /* max-width: 430px; */
+  width: 100%;
+  max-width: 430px;
 }
 #join-complete .join-meeple{
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0;
+  
 }
 #join-complete .join-meeple img{
   max-width: 130px;

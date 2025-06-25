@@ -148,6 +148,10 @@ main{
   position: fixed;
   bottom: 110px;
   z-index: 50;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 380px;
 }
 
 

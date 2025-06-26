@@ -1,5 +1,6 @@
 nav#navigation {
-  width: 430px;
+  max-width: 420px;
+  width: 100%;
   height: 96px;
   /* padding: 20px; */
   display: flex;
@@ -17,7 +18,7 @@ nav#navigation ul.nav-bar{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 62px;
+  gap: 50px;
   font-size: 30px;
 }
 nav#navigation ul.nav-bar li{

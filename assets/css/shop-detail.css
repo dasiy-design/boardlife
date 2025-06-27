@@ -45,7 +45,7 @@
 }
 #shop-detail .shop-desc {
   flex: 1;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 #shop-detail .shop-content .shop-desc h4 {
   color: var(--color-black);

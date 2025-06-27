@@ -39,7 +39,8 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  width: 370px;
+  width: 100%;
+  max-width: 340px;
   margin-top: 20px;
 }
 #shop .shop-title img {
@@ -51,7 +52,6 @@
 }
 #shop .shop-desc{
   flex: 1;
-  padding-right: 30px;
 }
 #shop .shop-desc h4 {
   margin-bottom: 6px;

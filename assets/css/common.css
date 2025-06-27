@@ -228,13 +228,12 @@ p.small {
 }
 
 /* 탑버튼 */
-main {
-  position: relative; /* top 버튼의 기준 */
-}
+
 .top {
   position: fixed;
-  right: 5%;
-  bottom: 17%;
+  left: 50%;
+  transform: translateX(200%);
+  bottom: 120px;
   z-index: 50;
 }
 .top i {
@@ -434,4 +433,11 @@ main {
 
 @media (max-width: 1600px) {
   .left{display: none;}
+}
+@media (max-width: 430px) {
+  .top {
+    left: 75%;
+    transform: translateX(0);
+    bottom: 120px;
+  }
 }

@@ -173,6 +173,9 @@
   justify-content: center;
   align-items: center;
 }
+#group .group-wrap{
+  border: 1px solid #000;
+}
 #group .group-wrap .card-wrap .group-card{
   border: none;
 }
@@ -189,6 +192,8 @@
 }
 #group .group-card .card-top p{
   margin-top: 20px;
+  height: 50px;
+  overflow: hidden;
 }
 
 /* ad banner */
